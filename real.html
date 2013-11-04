@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="stylesheets/marfa.css">
+
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+    </head>
+    <body>
+
+        <input type="radio" name="navSelect" id="AboutRadio" />
+        <input type="radio" name="navSelect" id="StockistsRadio" />
+        <input type="radio" name="navSelect" id="ShopRadio" />
+        <input type="radio" name="navSelect" id="ContactRadio" />
+
+        <nav>
+            <ul class="ContactSelected">
+
+                <li id="NavAbout">
+                    <label for="AboutRadio" data-href="#Marfa">
+                        About
+                    </label>
+                </li>
+                <li id="NavStockists">
+                    <label for="StockistsRadio" data-href="#Marfa2">
+                        Stockists
+                    </label>
+                </li>
+                <li id="NavShop">
+                    <label for="ShopRadio" data-href="#Marfa3">
+                        Shop
+                    </label>
+                </li>
+                <li id="NavContact">
+                    <label for="ContactRadio" data-href="#Marfa4">
+                        Contact
+                    </label>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="Layer" id="Layer3">
+
+            <aside id="About">
+                <img src="img/cabine.gif" id="Cabinet" />
+            </aside>
+
+            
+
+            <img src="img/robez.gif" id="Robez" />
+
+        </div>
+        
+
+        <div class="Layer" id="Layer1">
+        
+            <aside class="BgImage" id="Intro"></aside>
+            <aside class="BgImage" id="Next"></aside>
+            <aside class="BgImage" id="Red"></aside>
+            <aside class="BgImage" id="White"></aside>
+
+        </div>
+
+        <div class="Layer" id="Layer2">
+
+            <aside id="Marfa">
+
+            </aside>
+
+            <aside id="Marfa2">
+
+            </aside>
+
+            <aside id="Marfa3">
+
+            </aside>
+
+            <aside id="Marfa4">
+
+            </aside>
+
+        </div>
+        
+        
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,307 @@
+/* line 17, ../../../.rvm/gems/ruby-2.0.0-p195/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../.rvm/gems/ruby-2.0.0-p195/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../.rvm/gems/ruby-2.0.0-p195/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../.rvm/gems/ruby-2.0.0-p195/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../.rvm/gems/ruby-2.0.0-p195/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../.rvm/gems/ruby-2.0.0-p195/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../.rvm/gems/ruby-2.0.0-p195/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../.rvm/gems/ruby-2.0.0-p195/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../.rvm/gems/ruby-2.0.0-p195/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "Honda";
+  src: url("../fonts/honda.eot");
+  src: url("../fonts/honda.eot?#iefix") format("embedded-opentype"), url("../fonts/honda.svg#Honda") format("svg"), url("../fonts/honda.woff") format("woff"), url("../fonts/honda.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 18, ../sass/marfa.scss */
+body, html {
+  min-width: 400px;
+  height: 100%;
+}
+
+/* line 23, ../sass/marfa.scss */
+a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+}
+
+/* line 29, ../sass/marfa.scss */
+nav {
+  font-family: Honda, Serif;
+  z-index: 100;
+  font-size: 24px;
+  color: white;
+  width: 20px;
+  word-break: break-all;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* line 39, ../sass/marfa.scss */
+nav li {
+  position: fixed;
+  z-index: 100;
+  width: 12px;
+  line-height: 0.9em;
+}
+/* line 44, ../sass/marfa.scss */
+nav li label {
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+}
+/* line 49, ../sass/marfa.scss */
+nav li#NavAbout {
+  top: 10%;
+  left: 10%;
+}
+/* line 53, ../sass/marfa.scss */
+nav li#NavStockists {
+  bottom: 10%;
+  left: 10%;
+}
+/* line 57, ../sass/marfa.scss */
+nav li#NavShop {
+  top: 10%;
+  right: 10%;
+}
+/* line 61, ../sass/marfa.scss */
+nav li#NavContact {
+  bottom: 10%;
+  right: 10%;
+}
+
+/* line 68, ../sass/marfa.scss */
+input[type=radio] {
+  position: fixed;
+  z-index: 1000;
+  left: -1000px;
+}
+
+/* line 75, ../sass/marfa.scss */
+#AboutRadio:checked ~ nav li label {
+  color: black;
+}
+/* line 79, ../sass/marfa.scss */
+#AboutRadio:checked ~ nav li#NavAbout label {
+  color: white;
+}
+
+/* line 85, ../sass/marfa.scss */
+#StockistsRadio:checked ~ nav li label {
+  color: #de4627;
+}
+/* line 89, ../sass/marfa.scss */
+#StockistsRadio:checked ~ nav li#NavStockists label {
+  color: white;
+}
+
+/* line 95, ../sass/marfa.scss */
+#ShopRadio:checked ~ nav li label {
+  color: #faca99;
+}
+/* line 99, ../sass/marfa.scss */
+#ShopRadio:checked ~ nav li#NavShop label {
+  color: white;
+}
+
+/* line 105, ../sass/marfa.scss */
+#ContactRadio:checked ~ nav li label {
+  color: black;
+}
+/* line 109, ../sass/marfa.scss */
+#ContactRadio:checked ~ nav li#NavContact label {
+  color: white;
+}
+
+@media all and (min-height: 500px) {
+  /* line 115, ../sass/marfa.scss */
+  nav {
+    font-size: 28px;
+  }
+}
+@media all and (min-height: 600px) {
+  /* line 121, ../sass/marfa.scss */
+  nav {
+    font-size: 36px;
+  }
+}
+@media all and (min-height: 700px) {
+  /* line 127, ../sass/marfa.scss */
+  nav {
+    font-size: 40px;
+  }
+}
+/* line 132, ../sass/marfa.scss */
+aside {
+  min-width: 400px;
+  height: 4000px;
+  background: no-repeat center fixed;
+  background-size: 100% auto;
+}
+
+/* line 139, ../sass/marfa.scss */
+#Marfa {
+  background-image: url(../img/bigbg@2x.png);
+}
+
+/* line 143, ../sass/marfa.scss */
+#Marfa2 {
+  background-image: url(../img/bigbg2@2x.png);
+}
+
+/* line 147, ../sass/marfa.scss */
+#Marfa3 {
+  background-image: url(../img/bigbg3@2x.png);
+}
+
+/* line 151, ../sass/marfa.scss */
+#Marfa4 {
+  background-image: url(../img/bigbg4@2x.png);
+}
+
+/* line 155, ../sass/marfa.scss */
+.Layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 161, ../sass/marfa.scss */
+#Layer1 {
+  z-index: 1;
+}
+
+/* line 165, ../sass/marfa.scss */
+#Layer2 {
+  z-index: 2;
+}
+
+/* line 169, ../sass/marfa.scss */
+#Layer3 {
+  z-index: 3;
+}
+/* line 171, ../sass/marfa.scss */
+#Layer3 h1 {
+  width: 300px;
+  background: white;
+  margin: 0 auto;
+  font-size: 26px;
+  text-align: center;
+  padding: 50px;
+  position: relative;
+  margin-top: 1450px;
+  margin-bottom: 800px;
+}
+
+/* line 184, ../sass/marfa.scss */
+.BgImage {
+  background-size: 55% auto;
+  background-position: center;
+  background-attachment: fixed;
+  min-width: 400px;
+  margin: 0 auto;
+  position: relative;
+  top: 100%;
+  height: 1100px;
+}
+
+/* line 195, ../sass/marfa.scss */
+#Intro {
+  background-image: url(http://marfajournal.com/images/kit_run.gif);
+  background-color: white;
+  background-size: 17% auto;
+  height: 1000px;
+}
+
+/* line 202, ../sass/marfa.scss */
+#Next {
+  background-position: bottom;
+  background-attachment: scroll;
+  background-color: #DE4627;
+  background-size: 100% auto;
+}
+
+/* line 208, ../sass/marfa.scss */
+#Red {
+  background-color: #de4627;
+  height: 2700px;
+}
+
+/* line 212, ../sass/marfa.scss */
+#White {
+  background-color: #FACA99;
+  height: 5500px;
+}
+
+/* line 217, ../sass/marfa.scss */
+#Cabinet {
+  display: block;
+  width: 200px;
+  margin: 2400px auto 500px;
+}
+
+/* line 223, ../sass/marfa.scss */
+#Robez {
+  display: block;
+  width: 200px;
+  margin: 600px auto;
+}

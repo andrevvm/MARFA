@@ -134,10 +134,34 @@ aside {
   height: 4000px;
   background: no-repeat center fixed;
   background-size: 100% auto;
+  &#IntroSection {
+    height: 2000px;
+  }
+  &#About {
+    margin-top: 0px;
+    padding-top: 50px;
+    height: 3200px;
+  }
+}
+
+#IntroSection {
+  padding-top: 1200px;
+}
+
+.TextBlock {
+  width: 300px;
+  margin: 0 auto;
+  padding: 50px 50px 70px;
+  background: white;
+  font-family: Honda, Serif;
+  text-align: center;
+  font-size: 64px;
+  line-height: 1.1em;
 }
 
 #Marfa {
   background-image: url(../img/bigbg@2x.png);
+  height: 3000px;
 }
 
 #Marfa2 {
@@ -195,8 +219,10 @@ aside {
 #Intro {
   background-image: url(http://marfajournal.com/images/kit_run.gif);
   background-color: white;
-  background-size: 17% auto;
-  height: 1000px;
+  background-size: 20% auto;
+  background-position: center;
+  background-attachment: fixed;
+  height: 1200px;
 }
 
 #Next {
@@ -207,17 +233,26 @@ aside {
 }
 #Red {
   background-color: $dark_red;
-  height: 2700px;
+  height: 2400px;
 }
 #White {
-  background-color: #FACA99;
+  background-color: $light_yellow;
+  background-image: url('../img/rock.gif');
+  background-size: 120%;
   height: 5500px;
+}
+
+#AboutText {
+  display: block;
+  width: 542px;
+  height: auto;
+  margin: 0px auto 400px;
 }
 
 #Cabinet {
   display: block;
   width: 200px;
-  margin: 2400px auto 500px;
+  margin: 500px auto 500px;
 }
 
 #Robez {

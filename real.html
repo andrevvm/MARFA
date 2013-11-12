@@ -24,27 +24,27 @@
         <input type="radio" name="navSelect" id="ContactRadio" />
 
         <nav>
-            <ul class="ContactSelected">
+            <ul>
 
                 <li id="NavAbout">
-                    <label for="AboutRadio" data-href="#About">
+                    <a href="#About">
                         About
-                    </label>
+                    </a>
                 </li>
                 <li id="NavStockists">
-                    <label for="StockistsRadio" data-href="#Marfa2">
+                    <a href="#Marfa3">
                         Stockists
-                    </label>
+                    </a>
                 </li>
                 <li id="NavShop">
-                    <label for="ShopRadio" data-href="#Marfa3">
+                    <a href="#Marfa2">
                         Shop
-                    </label>
+                    </a>
                 </li>
                 <li id="NavContact">
-                    <label for="ContactRadio" data-href="#Marfa4">
+                    <a href="#Marfa4">
                         Contact
-                    </label>
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -74,19 +74,19 @@
         <!-- MIDDLE LAYER -->
         <div class="Layer" id="Layer2">
 
-            <aside id="Marfa">
+            <aside id="Marfa" data-rel="AboutRadio">
 
             </aside>
 
-            <aside id="Marfa2">
+            <aside id="Marfa2" data-rel="ShopRadio">
 
             </aside>
 
-            <aside id="Marfa3">
+            <aside id="Marfa3" data-rel="StockistsRadio">
 
             </aside>
 
-            <aside id="Marfa4">
+            <aside id="Marfa4" data-rel="ContactRadio">
 
             </aside>
 
@@ -95,10 +95,10 @@
         <!-- BOTTOM LAYER -->
         <div class="Layer" id="Layer1">
         
-            <aside class="BgImage" id="Intro"></aside>
-            <aside class="BgImage" id="Next"></aside>
-            <aside class="BgImage" id="Red"></aside>
-            <aside class="BgImage" id="White"></aside>
+            <aside class="BgImage" id="Intro" data-rel="AboutRadio"></aside>
+            <aside class="BgImage" id="Red" data-rel="ShopRadio"></aside>
+            <aside class="BgImage" id="Next" data-rel="StockistsRadio"></aside>
+            <aside class="BgImage" id="White" data-rel="ContactRadio"></aside>
 
         </div>
         

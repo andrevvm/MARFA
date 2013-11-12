@@ -30,12 +30,14 @@ nav {
   font-family: Honda, Serif;
   z-index: 100;
   font-size: 24px;
-  color: white;
+  color: black;
   width: 20px;
   word-break: break-all;
   text-transform: uppercase;
   text-align: center;
-  
+  a {
+    color: black;
+  }
   li {
     position: fixed;
     z-index: 100;
@@ -72,41 +74,41 @@ input[type=radio] {
 }
 
 #AboutRadio:checked ~ nav {
-  li label {
+  li a {
     color: black;
   }
 
-  li#NavAbout label {
+  li#NavAbout a {
     color: white;
   }
 }
 
 #StockistsRadio:checked ~ nav {
-  li label {
-    color: $dark_red;
+  li a {
+    color: $light_yellow;
   }
 
-  li#NavStockists label {
+  li#NavStockists a {
     color: white;
   }
 }
 
 #ShopRadio:checked ~ nav {
-  li label {
-    color: $light_yellow;
+  li a {
+    color: $red;
   }
 
-  li#NavShop label {
+  li#NavShop a {
     color: white;
   }
 }
 
 #ContactRadio:checked ~ nav {
-  li label {
+  li a {
     color: black;
   }
 
-  li#NavContact label {
+  li#NavContact a {
     color: white;
   }
 }
@@ -135,7 +137,7 @@ aside {
   background: no-repeat center fixed;
   background-size: 100% auto;
   &#IntroSection {
-    height: 2000px;
+    height: 1200px;
   }
   &#About {
     margin-top: 0px;
@@ -161,7 +163,7 @@ aside {
 
 #Marfa {
   background-image: url(../img/bigbg@2x.png);
-  height: 3000px;
+  height: 4000px;
 }
 
 #Marfa2 {
@@ -237,7 +239,6 @@ aside {
 }
 #White {
   background-color: $light_yellow;
-  background-image: url('../img/rock.gif');
   background-size: 120%;
   height: 5500px;
 }
@@ -252,7 +253,7 @@ aside {
 #Cabinet {
   display: block;
   width: 200px;
-  margin: 500px auto 500px;
+  margin: 600px auto 500px;
 }
 
 #Robez {

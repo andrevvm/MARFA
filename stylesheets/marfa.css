@@ -88,7 +88,7 @@ a {
 nav {
   font-family: Honda, Serif;
   z-index: 100;
-  font-size: 24px;
+  font-size: 20px;
   color: black;
   width: 20px;
   word-break: break-all;
@@ -114,7 +114,7 @@ nav li label {
 }
 /* line 51, ../sass/marfa.scss */
 nav li#NavAbout {
-  top: 10%;
+  top: 6%;
   left: 10%;
 }
 /* line 55, ../sass/marfa.scss */
@@ -124,7 +124,7 @@ nav li#NavStockists {
 }
 /* line 59, ../sass/marfa.scss */
 nav li#NavShop {
-  top: 10%;
+  top: 6%;
   right: 10%;
 }
 /* line 63, ../sass/marfa.scss */
@@ -179,19 +179,19 @@ input[type=radio] {
 @media all and (min-height: 500px) {
   /* line 117, ../sass/marfa.scss */
   nav {
-    font-size: 28px;
+    font-size: 24px;
   }
 }
 @media all and (min-height: 600px) {
   /* line 123, ../sass/marfa.scss */
   nav {
-    font-size: 36px;
+    font-size: 32px;
   }
 }
 @media all and (min-height: 700px) {
   /* line 129, ../sass/marfa.scss */
   nav {
-    font-size: 40px;
+    font-size: 36px;
   }
 }
 /* line 134, ../sass/marfa.scss */
@@ -324,7 +324,7 @@ aside#About {
 #White {
   background-color: #faca99;
   background-size: 120%;
-  height: 5500px;
+  height: 6200px;
 }
 
 /* line 246, ../sass/marfa.scss */

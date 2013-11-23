@@ -146,6 +146,14 @@ aside {
   }
 }
 
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+ aside {
+    background-attachment: scroll;
+  }
+}
+
 #IntroSection {
   padding-top: 1200px;
 }

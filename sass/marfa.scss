@@ -76,9 +76,17 @@ nav {
     &#NavDaily {
       width: 100px;
       position: fixed;
-      top: 30px;
-      left: 50%;
-      margin-left: -50px;
+      top: 40%;
+      left: 10%;
+      margin-left: -40px;
+      font-size: 0.7em;
+    }
+    &#Insta {
+      width: 100px;
+      position: fixed;
+      top: 40%;
+      right: 10%;
+      margin-right: -40px;
       font-size: 0.7em;
     }
   }
@@ -173,7 +181,7 @@ aside {
     }
 
     #Skate {
-      margin-top: 600px;
+      margin-top: 500px;
     }
   }
   &#Shop {
@@ -197,6 +205,13 @@ aside {
     position: absolute;
     width: 100%;
     text-transform: uppercase;
+  }
+
+  .Images {
+    img {
+      width: 20%;
+      margin: 50px;
+    }
   }
 }
 
@@ -274,15 +289,15 @@ and (max-device-width : 480px) {
 }
 
 .TextBlock {
-  width: 300px;
+  width: 280px;
   margin: 0 auto;
-  padding: 50px 50px 70px;
+  padding: 50px 50px 60px;
   background: white;
   color: black;
   font-family: Honda, Serif;
   text-align: center;
   font-size: 64px;
-  line-height: 1.1em;
+  line-height: 1em;
 }
 
 #Marfa {

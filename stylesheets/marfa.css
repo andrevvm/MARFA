@@ -534,6 +534,21 @@ aside .Images img.horz {
   #Marfa {
     background-color: #de4627;
   }
+
+  /* line 427, ../sass/marfa.scss */
+  #Marfa2 {
+    background-color: #faca99;
+  }
+
+  /* line 431, ../sass/marfa.scss */
+  #Marfa3 {
+    background-color: #007487;
+  }
+
+  /* line 435, ../sass/marfa.scss */
+  #Marfa4 {
+    background-color: #333;
+  }
 }
 /* line 440, ../sass/marfa.scss */
 #IntroSection {

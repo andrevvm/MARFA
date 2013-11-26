@@ -3,7 +3,54 @@ $dark_red: #DE4627;
 $light_yellow: #FACA99;
 $dark_blue: #007487;
 
+$honda: Honda, serif;
+$frutiger: Frutifer, sans-serif;
+
 @import "compass/reset";
+@import "compass/css3/transition";
+
+/*
+    Example usage: 
+    @include animation(10s, 5s, changecolour)
+ */
+@mixin animation ($duration, $animation) {
+    -webkit-animation: $animation $duration linear;
+    -webkit-animation-iteration-count: infinite;
+ 
+    
+}
+
+@mixin keyframe ($animation_name) {
+    @-webkit-keyframes $animation_name {
+        @content;
+    }
+ 
+    @-moz-keyframes $animation_name {
+        @content;
+    }
+ 
+    @-o-keyframes $animation_name {
+        @content;
+    }
+ 
+    @keyframes $animation_name {
+        @content;
+    }
+}
+
+@include keyframe(blink) {
+    0% {
+        color: $red;
+    }
+ 
+    50% {
+        color: white;
+    }
+
+    100% {
+        color: $red;
+    }
+}
 
 @font-face {
   font-family: "Honda";
@@ -26,7 +73,7 @@ $dark_blue: #007487;
 body, html {
   min-width: 400px;
   height: 100%;
-  font-family: Honda, Serif;
+  font-family: $frutiger;
 }
 
 a {
@@ -35,8 +82,12 @@ a {
   display: inline-block;
 }
 
+h1,h2,h3,h4,h5,h6 {
+  font-family: $honda;
+}
+
 nav {
-  font-family: Honda, Serif;
+  font-family: $honda;
   z-index: 100;
   font-size: 20px;
   color: black;
@@ -80,6 +131,7 @@ nav {
       left: 10%;
       margin-left: -40px;
       font-size: 0.7em;
+      display: none;
     }
     &#Insta {
       width: 100px;
@@ -92,7 +144,7 @@ nav {
   }
 }
 
-input[type=radio] {
+input[name=navSelect] {
   position: fixed;
   z-index: 1000;
   left: -1000px;
@@ -164,12 +216,12 @@ aside {
   position: relative;
   text-align: center;
   &#IntroSection {
-    height: 1200px;
+    height: 800px;
   }
   &#About {
     margin-top: 0px;
     padding-top: 50px;
-    height: 3200px;
+    height: 7500px;
 
     h1 {
       top: 290px;
@@ -181,14 +233,22 @@ aside {
     }
 
     #Skate {
-      margin-top: 500px;
+      margin-top: 200px;
     }
   }
   &#Shop {
     padding-top: 12%;
+    height: 1800px;
     h1 {
       top: 420px;
       font-size: 72px;
+    }
+    h2 {
+      font-size: 56px;
+      text-transform: uppercase;
+      color: white;
+      margin: 50px 0;
+      @include animation(500ms, blink);
     }
   }
   &#Stockists {
@@ -204,14 +264,107 @@ aside {
     text-align: center;
     position: absolute;
     width: 100%;
+    top: 290px;
     text-transform: uppercase;
   }
 
   .Images {
     img {
-      width: 20%;
+      width: 250px;
       margin: 50px;
+      &.horz {
+        width: 500px;
+      }
     }
+  }
+}
+
+#StockistsList {
+  width: 700px;
+  margin: 0 auto;
+  color: black;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  label {
+    font-family: $honda;
+    font-size: 56px;
+    cursor: pointer;
+    text-transform: uppercase;
+    line-height: 1.6em;
+    letter-spacing: 2px;
+    color: white;
+    clear: both;
+    padding-top: 50px;
+    display: block;
+  }
+
+
+  a, span {
+    padding: 10px;
+    display: inline-block;
+    color: black;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  header {
+    clear: both;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 0 0 10px;
+    letter-spacing: 2px;
+    padding: 40px 0 0px;
+    line-height: 1em;
+    text-align: left;
+    color: white;
+  }
+
+  .info {
+    position: absolute;
+    left: auto;
+    display: none;
+    padding: 10px;
+    background: white;
+    font-size: .8em;
+    color: #666;
+    width: 150px;
+    line-height: 1.3em;
+  }
+  li > ul > li {
+    position: relative;
+    float: left;
+    width: 300px;
+    margin: 0px 20px;
+    text-align: left;
+    cursor: default;
+    &:hover {
+      z-index: 10;
+      a, span {
+        background: white;
+      }
+      .info {
+        display: inline-block;
+      }
+    }
+  }
+  ul {
+    display: block;
+  }
+  input {
+    position: absolute;
+    opacity: 0;
+  }
+  input:checked {
+    ~ header,
+    ~ ul {
+      display: block;
+    }
+
   }
 }
 
@@ -223,7 +376,7 @@ aside {
     margin: 15px 0;
   }
   .question {
-    font-family: Honda, serif;
+    font-family: $honda;
     font-size: 20px;
     color: #00a2b4;
     letter-spacing: 2px;
@@ -232,7 +385,7 @@ aside {
     line-height: 1.1em;
   }
   .answer {
-    font-family: Frutiger;
+    font-family: $frutiger;
     font-size: 15px;
     color: #000000;
     letter-spacing: 1px;
@@ -245,7 +398,7 @@ aside {
 
   }
   .text {
-    font-family: Frutiger;
+    font-family: $frutiger;
     font-size: 15px;
     color: #000000;
     letter-spacing: 1px;
@@ -262,7 +415,7 @@ aside {
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
  body {
-  background-color: $dark_red;
+  background-color: white;
  }
  aside {
     background-attachment: scroll;
@@ -294,10 +447,18 @@ and (max-device-width : 480px) {
   padding: 50px 50px 60px;
   background: white;
   color: black;
-  font-family: Honda, Serif;
+  font-family: $honda;
   text-align: center;
   font-size: 64px;
   line-height: 1em;
+  &#Insane {
+    text-transform: uppercase;
+    width: 500px;
+    font-size: 56px;
+    line-height: 1.2em;
+    padding: 20px;
+    margin-top: 380px;
+  }
 }
 
 #Marfa {
@@ -307,6 +468,7 @@ and (max-device-width : 480px) {
 
 #Marfa2 {
   background-image: url(../img/bigbg2@2x.png);
+  height: 2000px;
 }
 
 #Marfa3 {
@@ -357,7 +519,7 @@ and (max-device-width : 480px) {
 }
 #Red {
   background-color: $dark_red;
-  height: 2500px;
+  height: 3400px;
 }
 #Bra {
   background-image: url(../img/marfa7.jpg);
@@ -366,10 +528,9 @@ and (max-device-width : 480px) {
   height: 2000px;
 }
 #Caught {
-  background-image: url(../img/Caught.jpg);
   background-size: 60%;
   background-color: $dark_red;
-  height: 2000px;
+  height: 2900px;
 }
 #Next {
   background-position: bottom;
@@ -380,7 +541,7 @@ and (max-device-width : 480px) {
 
 #White {
   background-color: $dark_blue;
-  height: 6200px;
+  height: 4000px;
 }
 
 #AboutText {
@@ -399,7 +560,12 @@ and (max-device-width : 480px) {
 #ShopGif {
   display: block;
   width: 200px;
-  margin: 40px auto;
+  margin: 40px auto 300px;
+}
+
+#Covers {
+  background: white;
+  border: 50px solid white;
 }
 
 #StockistsGif {
@@ -407,3 +573,4 @@ and (max-device-width : 480px) {
   display: block;
   margin: 40px auto;
 }
+

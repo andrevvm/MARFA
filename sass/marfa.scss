@@ -235,10 +235,17 @@ aside {
     #Skate {
       margin-top: 200px;
     }
+
+    .Newsletter {
+      font-family: $honda;
+      text-transform: uppercase;
+      font-size: 40px;
+      text-decoration: none;
+    }
   }
   &#Shop {
     padding-top: 12%;
-    height: 1900px;
+    height: 2800px;
     h1 {
       top: 420px;
       font-size: 72px;
@@ -252,10 +259,35 @@ aside {
     }
   }
   &#Stockists {
+    height: 3900px;
     padding-top: 8%;
     h1 {
       top: 300px;
       font-size: 72px;
+    }
+  }
+  &#Contact {
+    h1 {
+      top: 200px;
+    }
+    .Text {
+      position: relative;
+      top: 400px;
+      font-size: 32px;
+      color: #999;
+      p {
+        margin-bottom: 120px;
+        &.Website {
+          font-size: 0.5em;
+        }
+        a {
+          text-decoration: none;
+          color: white;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
     }
   }
   h1 {
@@ -459,6 +491,17 @@ and (max-device-width : 480px) {
     padding: 20px;
     margin-top: 380px;
   }
+  &#Newsletter {
+    text-transform: uppercase;
+    width: 400px;
+    margin: 400px auto;
+  }
+  a {
+    color: $red;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 #Marfa {
@@ -468,7 +511,7 @@ and (max-device-width : 480px) {
 
 #Marfa2 {
   background-image: url(../img/bigbg2@2x.png);
-  height: 2000px;
+  height: 3000px;
 }
 
 #Marfa3 {
@@ -530,7 +573,12 @@ and (max-device-width : 480px) {
 #Caught {
   background-size: 60%;
   background-color: $dark_red;
-  height: 2900px;
+  height: 3900px;
+}
+#Linds {
+  background-image: url(../img/linds.jpg);
+  background-size: 72%;
+  height: 1100px;
 }
 #Next {
   background-position: bottom;
@@ -541,7 +589,13 @@ and (max-device-width : 480px) {
 
 #White {
   background-color: $dark_blue;
-  height: 4000px;
+  height: 2800px;
+}
+
+#Madchen {
+  background-image: url(../img/madchen.jpg);
+  background-size: 60%;
+  height: 1200px;
 }
 
 #AboutText {

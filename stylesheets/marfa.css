@@ -154,7 +154,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body, html {
   min-width: 400px;
   height: 100%;
-  font-family: Frutifer, sans-serif;
+  font-family: Frutiger, sans-serif;
 }
 
 /* line 79, ../sass/marfa.scss */
@@ -535,7 +535,7 @@ aside .Images img.horz {
 }
 /* line 421, ../sass/marfa.scss */
 .Chateau .answer {
-  font-family: Frutifer, sans-serif;
+  font-family: Frutiger, sans-serif;
   font-size: 15px;
   color: #000000;
   letter-spacing: 1px;
@@ -548,7 +548,7 @@ aside .Images img.horz {
 }
 /* line 434, ../sass/marfa.scss */
 .Chateau .text {
-  font-family: Frutifer, sans-serif;
+  font-family: Frutiger, sans-serif;
   font-size: 15px;
   color: #000000;
   letter-spacing: 1px;

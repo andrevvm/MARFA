@@ -267,6 +267,7 @@ aside {
     }
   }
   &#Contact {
+    height: 1200px;
     h1 {
       top: 200px;
     }
@@ -338,6 +339,7 @@ aside {
     padding: 10px;
     display: inline-block;
     color: black;
+    font-weight: bold;
   }
 
   a:hover {
@@ -520,6 +522,7 @@ and (max-device-width : 480px) {
 
 #Marfa4 {
   background-image: url(../img/bigbg4@2x.png);
+  height: 1200px;
 }
 
 .Layer {

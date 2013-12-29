@@ -70,7 +70,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 @-webkit-keyframes blink {
   /* line 43, ../sass/marfa.scss */
   0% {
-    color: #e16046;
+    color: black;
   }
 
   /* line 47, ../sass/marfa.scss */
@@ -80,14 +80,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   /* line 51, ../sass/marfa.scss */
   100% {
-    color: #e16046;
+    color: black;
   }
 }
 
 @-moz-keyframes blink {
   /* line 43, ../sass/marfa.scss */
   0% {
-    color: #e16046;
+    color: black;
   }
 
   /* line 47, ../sass/marfa.scss */
@@ -97,14 +97,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   /* line 51, ../sass/marfa.scss */
   100% {
-    color: #e16046;
+    color: black;
   }
 }
 
 @-o-keyframes blink {
   /* line 43, ../sass/marfa.scss */
   0% {
-    color: #e16046;
+    color: black;
   }
 
   /* line 47, ../sass/marfa.scss */
@@ -114,14 +114,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   /* line 51, ../sass/marfa.scss */
   100% {
-    color: #e16046;
+    color: black;
   }
 }
 
 @keyframes blink {
   /* line 43, ../sass/marfa.scss */
   0% {
-    color: #e16046;
+    color: black;
   }
 
   /* line 47, ../sass/marfa.scss */
@@ -131,7 +131,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   /* line 51, ../sass/marfa.scss */
   100% {
-    color: #e16046;
+    color: black;
   }
 }
 
@@ -344,10 +344,8 @@ aside#Shop h1 {
 aside#Shop h2 {
   font-size: 56px;
   text-transform: uppercase;
-  color: white;
+  color: black;
   margin: 50px 0;
-  -webkit-animation: blink 400ms linear;
-  -webkit-animation-iteration-count: infinite;
 }
 /* line 256, ../sass/marfa.scss */
 aside#Stockists {

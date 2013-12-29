@@ -68,70 +68,70 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     @include animation(10s, 5s, changecolour)
  */
 @-webkit-keyframes blink {
-  /* line 42, ../sass/marfa.scss */
+  /* line 43, ../sass/marfa.scss */
   0% {
-    color: #f54f2d;
+    color: #e16046;
   }
 
-  /* line 46, ../sass/marfa.scss */
+  /* line 47, ../sass/marfa.scss */
   50% {
     color: white;
   }
 
-  /* line 50, ../sass/marfa.scss */
+  /* line 51, ../sass/marfa.scss */
   100% {
-    color: #f54f2d;
+    color: #e16046;
   }
 }
 
 @-moz-keyframes blink {
-  /* line 42, ../sass/marfa.scss */
+  /* line 43, ../sass/marfa.scss */
   0% {
-    color: #f54f2d;
+    color: #e16046;
   }
 
-  /* line 46, ../sass/marfa.scss */
+  /* line 47, ../sass/marfa.scss */
   50% {
     color: white;
   }
 
-  /* line 50, ../sass/marfa.scss */
+  /* line 51, ../sass/marfa.scss */
   100% {
-    color: #f54f2d;
+    color: #e16046;
   }
 }
 
 @-o-keyframes blink {
-  /* line 42, ../sass/marfa.scss */
+  /* line 43, ../sass/marfa.scss */
   0% {
-    color: #f54f2d;
+    color: #e16046;
   }
 
-  /* line 46, ../sass/marfa.scss */
+  /* line 47, ../sass/marfa.scss */
   50% {
     color: white;
   }
 
-  /* line 50, ../sass/marfa.scss */
+  /* line 51, ../sass/marfa.scss */
   100% {
-    color: #f54f2d;
+    color: #e16046;
   }
 }
 
 @keyframes blink {
-  /* line 42, ../sass/marfa.scss */
+  /* line 43, ../sass/marfa.scss */
   0% {
-    color: #f54f2d;
+    color: #e16046;
   }
 
-  /* line 46, ../sass/marfa.scss */
+  /* line 47, ../sass/marfa.scss */
   50% {
     color: white;
   }
 
-  /* line 50, ../sass/marfa.scss */
+  /* line 51, ../sass/marfa.scss */
   100% {
-    color: #f54f2d;
+    color: #e16046;
   }
 }
 
@@ -150,26 +150,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-style: normal;
 }
 
-/* line 73, ../sass/marfa.scss */
+/* line 74, ../sass/marfa.scss */
 body, html {
   min-width: 400px;
   height: 100%;
   font-family: Frutiger, sans-serif;
 }
 
-/* line 79, ../sass/marfa.scss */
+/* line 80, ../sass/marfa.scss */
 a {
   text-decoration: none;
   color: white;
   display: inline-block;
 }
 
-/* line 85, ../sass/marfa.scss */
+/* line 86, ../sass/marfa.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: Honda, serif;
 }
 
-/* line 89, ../sass/marfa.scss */
+/* line 90, ../sass/marfa.scss */
 nav {
   font-family: Honda, serif;
   z-index: 100;
@@ -180,44 +180,44 @@ nav {
   text-transform: uppercase;
   text-align: center;
 }
-/* line 98, ../sass/marfa.scss */
+/* line 99, ../sass/marfa.scss */
 nav a {
   color: black;
 }
-/* line 101, ../sass/marfa.scss */
+/* line 102, ../sass/marfa.scss */
 nav li {
   position: fixed;
   z-index: 100;
   width: 12px;
   line-height: 0.9em;
 }
-/* line 106, ../sass/marfa.scss */
+/* line 107, ../sass/marfa.scss */
 nav li label {
   cursor: pointer;
   user-select: none;
   -webkit-user-select: none;
 }
-/* line 111, ../sass/marfa.scss */
+/* line 112, ../sass/marfa.scss */
 nav li#NavAbout {
   top: 6%;
   left: 10%;
 }
-/* line 115, ../sass/marfa.scss */
+/* line 116, ../sass/marfa.scss */
 nav li#NavStockists {
   bottom: 10%;
   left: 10%;
 }
-/* line 119, ../sass/marfa.scss */
+/* line 120, ../sass/marfa.scss */
 nav li#NavShop {
   top: 6%;
   right: 10%;
 }
-/* line 123, ../sass/marfa.scss */
+/* line 124, ../sass/marfa.scss */
 nav li#NavContact {
   bottom: 10%;
   right: 10%;
 }
-/* line 127, ../sass/marfa.scss */
+/* line 128, ../sass/marfa.scss */
 nav li#NavDaily {
   width: 100px;
   position: fixed;
@@ -227,7 +227,7 @@ nav li#NavDaily {
   font-size: 0.7em;
   display: none;
 }
-/* line 136, ../sass/marfa.scss */
+/* line 137, ../sass/marfa.scss */
 nav li#Insta {
   width: 100px;
   position: fixed;
@@ -237,68 +237,68 @@ nav li#Insta {
   font-size: 0.7em;
 }
 
-/* line 147, ../sass/marfa.scss */
+/* line 148, ../sass/marfa.scss */
 input[name=navSelect] {
   position: fixed;
   z-index: 1000;
   left: -1000px;
 }
 
-/* line 154, ../sass/marfa.scss */
+/* line 155, ../sass/marfa.scss */
 #AboutRadio:checked ~ nav li a {
-  color: black;
+  color: #f16e59;
 }
-/* line 158, ../sass/marfa.scss */
+/* line 159, ../sass/marfa.scss */
 #AboutRadio:checked ~ nav li#NavAbout a {
   color: white;
 }
 
-/* line 164, ../sass/marfa.scss */
+/* line 165, ../sass/marfa.scss */
 #StockistsRadio:checked ~ nav li a {
-  color: #007487;
+  color: #2ab6ce;
 }
-/* line 168, ../sass/marfa.scss */
+/* line 169, ../sass/marfa.scss */
 #StockistsRadio:checked ~ nav li#NavStockists a {
   color: white;
 }
 
-/* line 174, ../sass/marfa.scss */
+/* line 175, ../sass/marfa.scss */
 #ShopRadio:checked ~ nav li a {
-  color: #f54f2d;
+  color: #e16046;
 }
-/* line 178, ../sass/marfa.scss */
+/* line 179, ../sass/marfa.scss */
 #ShopRadio:checked ~ nav li#NavShop a {
   color: white;
 }
 
-/* line 184, ../sass/marfa.scss */
+/* line 185, ../sass/marfa.scss */
 #ContactRadio:checked ~ nav li a {
   color: black;
 }
-/* line 188, ../sass/marfa.scss */
+/* line 189, ../sass/marfa.scss */
 #ContactRadio:checked ~ nav li#NavContact a {
   color: white;
 }
 
 @media all and (min-height: 500px) {
-  /* line 194, ../sass/marfa.scss */
+  /* line 195, ../sass/marfa.scss */
   nav {
     font-size: 24px;
   }
 }
 @media all and (min-height: 600px) {
-  /* line 200, ../sass/marfa.scss */
+  /* line 201, ../sass/marfa.scss */
   nav {
     font-size: 32px;
   }
 }
 @media all and (min-height: 700px) {
-  /* line 206, ../sass/marfa.scss */
+  /* line 207, ../sass/marfa.scss */
   nav {
     font-size: 36px;
   }
 }
-/* line 211, ../sass/marfa.scss */
+/* line 212, ../sass/marfa.scss */
 aside {
   min-width: 400px;
   height: 4000px;
@@ -307,98 +307,100 @@ aside {
   position: relative;
   text-align: center;
 }
-/* line 218, ../sass/marfa.scss */
+/* line 219, ../sass/marfa.scss */
 aside#IntroSection {
   height: 800px;
 }
-/* line 221, ../sass/marfa.scss */
+/* line 222, ../sass/marfa.scss */
 aside#About {
   margin-top: 0px;
   padding-top: 50px;
   height: 7500px;
 }
-/* line 226, ../sass/marfa.scss */
+/* line 227, ../sass/marfa.scss */
 aside#About h1 {
   top: 290px;
 }
-/* line 230, ../sass/marfa.scss */
+/* line 231, ../sass/marfa.scss */
 aside#About #Aerobics {
   display: block;
   margin: 50px auto 250px;
 }
-/* line 235, ../sass/marfa.scss */
+/* line 236, ../sass/marfa.scss */
 aside#About #Skate {
   margin-top: 200px;
 }
-/* line 239, ../sass/marfa.scss */
-aside#About .Newsletter {
-  font-family: Honda, serif;
-  text-transform: uppercase;
-  font-size: 40px;
-  text-decoration: none;
-}
-/* line 246, ../sass/marfa.scss */
+/* line 241, ../sass/marfa.scss */
 aside#Shop {
   padding-top: 12%;
   height: 2800px;
 }
-/* line 249, ../sass/marfa.scss */
+/* line 244, ../sass/marfa.scss */
 aside#Shop h1 {
   top: 420px;
   font-size: 72px;
 }
-/* line 253, ../sass/marfa.scss */
+/* line 248, ../sass/marfa.scss */
 aside#Shop h2 {
   font-size: 56px;
   text-transform: uppercase;
   color: white;
   margin: 50px 0;
-  -webkit-animation: blink 500ms linear;
+  -webkit-animation: blink 400ms linear;
   -webkit-animation-iteration-count: infinite;
 }
-/* line 261, ../sass/marfa.scss */
+/* line 256, ../sass/marfa.scss */
 aside#Stockists {
   height: 3900px;
   padding-top: 8%;
 }
-/* line 264, ../sass/marfa.scss */
+/* line 259, ../sass/marfa.scss */
 aside#Stockists h1 {
   top: 300px;
   font-size: 72px;
 }
-/* line 269, ../sass/marfa.scss */
+/* line 264, ../sass/marfa.scss */
 aside#Contact {
-  height: 1200px;
+  height: 1300px;
 }
-/* line 271, ../sass/marfa.scss */
+/* line 266, ../sass/marfa.scss */
 aside#Contact h1 {
   top: 200px;
 }
-/* line 274, ../sass/marfa.scss */
+/* line 269, ../sass/marfa.scss */
+aside#Contact img {
+  width: 500px;
+  height: auto;
+}
+/* line 273, ../sass/marfa.scss */
 aside#Contact .Text {
   position: relative;
   top: 400px;
   font-size: 32px;
   color: #999;
 }
-/* line 279, ../sass/marfa.scss */
+/* line 278, ../sass/marfa.scss */
 aside#Contact .Text p {
   margin-bottom: 120px;
 }
-/* line 281, ../sass/marfa.scss */
+/* line 280, ../sass/marfa.scss */
 aside#Contact .Text p.Website {
-  font-size: 0.5em;
+  font-size: 0.4em;
 }
-/* line 284, ../sass/marfa.scss */
+/* line 283, ../sass/marfa.scss */
 aside#Contact .Text p a {
   text-decoration: none;
   color: white;
 }
-/* line 287, ../sass/marfa.scss */
+/* line 286, ../sass/marfa.scss */
 aside#Contact .Text p a:hover {
   text-decoration: underline;
 }
-/* line 294, ../sass/marfa.scss */
+/* line 290, ../sass/marfa.scss */
+aside#Contact .Text p small {
+  font-size: 0.8em;
+}
+/* line 296, ../sass/marfa.scss */
 aside h1 {
   color: white;
   font-size: 100px;
@@ -408,28 +410,29 @@ aside h1 {
   top: 290px;
   text-transform: uppercase;
 }
-/* line 305, ../sass/marfa.scss */
+/* line 307, ../sass/marfa.scss */
 aside .Images img {
-  width: 250px;
+  width: 350px;
   margin: 50px;
+  vertical-align: middle;
 }
-/* line 308, ../sass/marfa.scss */
+/* line 311, ../sass/marfa.scss */
 aside .Images img.horz {
-  width: 500px;
+  width: 700px;
 }
 
-/* line 315, ../sass/marfa.scss */
+/* line 318, ../sass/marfa.scss */
 #StockistsList {
   width: 700px;
   margin: 0 auto;
   color: black;
 }
-/* line 320, ../sass/marfa.scss */
+/* line 323, ../sass/marfa.scss */
 #StockistsList ul {
   margin: 0;
   padding: 0;
 }
-/* line 324, ../sass/marfa.scss */
+/* line 327, ../sass/marfa.scss */
 #StockistsList label {
   font-family: Honda, serif;
   font-size: 56px;
@@ -442,18 +445,18 @@ aside .Images img.horz {
   padding-top: 50px;
   display: block;
 }
-/* line 338, ../sass/marfa.scss */
+/* line 341, ../sass/marfa.scss */
 #StockistsList a, #StockistsList span {
   padding: 10px;
   display: inline-block;
   color: black;
   font-weight: bold;
 }
-/* line 345, ../sass/marfa.scss */
+/* line 348, ../sass/marfa.scss */
 #StockistsList a:hover {
   text-decoration: underline;
 }
-/* line 349, ../sass/marfa.scss */
+/* line 352, ../sass/marfa.scss */
 #StockistsList header {
   clear: both;
   text-transform: uppercase;
@@ -465,7 +468,7 @@ aside .Images img.horz {
   text-align: left;
   color: white;
 }
-/* line 361, ../sass/marfa.scss */
+/* line 364, ../sass/marfa.scss */
 #StockistsList .info {
   position: absolute;
   left: auto;
@@ -477,7 +480,7 @@ aside .Images img.horz {
   width: 150px;
   line-height: 1.3em;
 }
-/* line 372, ../sass/marfa.scss */
+/* line 375, ../sass/marfa.scss */
 #StockistsList li > ul > li {
   position: relative;
   float: left;
@@ -486,44 +489,44 @@ aside .Images img.horz {
   text-align: left;
   cursor: default;
 }
-/* line 379, ../sass/marfa.scss */
+/* line 382, ../sass/marfa.scss */
 #StockistsList li > ul > li:hover {
   z-index: 10;
 }
-/* line 381, ../sass/marfa.scss */
+/* line 384, ../sass/marfa.scss */
 #StockistsList li > ul > li:hover a, #StockistsList li > ul > li:hover span {
   background: white;
 }
-/* line 384, ../sass/marfa.scss */
+/* line 387, ../sass/marfa.scss */
 #StockistsList li > ul > li:hover .info {
   display: inline-block;
 }
-/* line 389, ../sass/marfa.scss */
+/* line 392, ../sass/marfa.scss */
 #StockistsList ul {
   display: block;
 }
-/* line 392, ../sass/marfa.scss */
+/* line 395, ../sass/marfa.scss */
 #StockistsList input {
   position: absolute;
   opacity: 0;
 }
-/* line 398, ../sass/marfa.scss */
+/* line 401, ../sass/marfa.scss */
 #StockistsList input:checked ~ header,
 #StockistsList input:checked ~ ul {
   display: block;
 }
 
-/* line 405, ../sass/marfa.scss */
+/* line 408, ../sass/marfa.scss */
 .Chateau {
   width: 600px;
   margin: 0 auto;
   line-height: 20px;
 }
-/* line 409, ../sass/marfa.scss */
+/* line 412, ../sass/marfa.scss */
 .Chateau p {
   margin: 15px 0;
 }
-/* line 412, ../sass/marfa.scss */
+/* line 415, ../sass/marfa.scss */
 .Chateau .question {
   font-family: Honda, serif;
   font-size: 20px;
@@ -533,7 +536,7 @@ aside .Images img.horz {
   font-style: normal;
   line-height: 1.1em;
 }
-/* line 421, ../sass/marfa.scss */
+/* line 424, ../sass/marfa.scss */
 .Chateau .answer {
   font-family: Frutiger, sans-serif;
   font-size: 15px;
@@ -546,7 +549,7 @@ aside .Images img.horz {
   border-image-repeat: none;
   padding-top: 1px;
 }
-/* line 434, ../sass/marfa.scss */
+/* line 437, ../sass/marfa.scss */
 .Chateau .text {
   font-family: Frutiger, sans-serif;
   font-size: 15px;
@@ -561,42 +564,42 @@ aside .Images img.horz {
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* line 451, ../sass/marfa.scss */
+  /* line 454, ../sass/marfa.scss */
   body {
     background-color: white;
   }
 
-  /* line 454, ../sass/marfa.scss */
+  /* line 457, ../sass/marfa.scss */
   aside {
     background-attachment: scroll;
   }
 
-  /* line 457, ../sass/marfa.scss */
+  /* line 460, ../sass/marfa.scss */
   #Marfa {
     background-color: #de4627;
   }
 
-  /* line 461, ../sass/marfa.scss */
+  /* line 464, ../sass/marfa.scss */
   #Marfa2 {
     background-color: #faca99;
   }
 
-  /* line 465, ../sass/marfa.scss */
+  /* line 468, ../sass/marfa.scss */
   #Marfa3 {
-    background-color: #007487;
+    background-color: #2ab6ce;
   }
 
-  /* line 469, ../sass/marfa.scss */
+  /* line 472, ../sass/marfa.scss */
   #Marfa4 {
     background-color: #333;
   }
 }
-/* line 474, ../sass/marfa.scss */
+/* line 477, ../sass/marfa.scss */
 #IntroSection {
   padding-top: 1200px;
 }
 
-/* line 478, ../sass/marfa.scss */
+/* line 481, ../sass/marfa.scss */
 .TextBlock {
   width: 280px;
   margin: 0 auto;
@@ -608,76 +611,76 @@ aside .Images img.horz {
   font-size: 64px;
   line-height: 1em;
 }
-/* line 488, ../sass/marfa.scss */
+/* line 491, ../sass/marfa.scss */
 .TextBlock#Insane {
   text-transform: uppercase;
   width: 500px;
   font-size: 56px;
   line-height: 1.2em;
   padding: 20px;
-  margin-top: 380px;
+  margin-top: 280px;
 }
-/* line 496, ../sass/marfa.scss */
-.TextBlock#Newsletter {
+/* line 499, ../sass/marfa.scss */
+.TextBlock.Newsletter {
   text-transform: uppercase;
   width: 400px;
-  margin: 400px auto;
+  margin: 400px auto 50px;
 }
-/* line 501, ../sass/marfa.scss */
+/* line 504, ../sass/marfa.scss */
 .TextBlock a {
-  color: #f54f2d;
+  color: #e16046;
 }
-/* line 503, ../sass/marfa.scss */
+/* line 506, ../sass/marfa.scss */
 .TextBlock a:hover {
   text-decoration: underline;
 }
 
-/* line 509, ../sass/marfa.scss */
+/* line 512, ../sass/marfa.scss */
 #Marfa {
   background-image: url(../img/bigbg@2x.png);
   height: 9500px;
 }
 
-/* line 514, ../sass/marfa.scss */
+/* line 517, ../sass/marfa.scss */
 #Marfa2 {
   background-image: url(../img/bigbg2@2x.png);
   height: 3000px;
 }
 
-/* line 519, ../sass/marfa.scss */
+/* line 522, ../sass/marfa.scss */
 #Marfa3 {
   background-image: url(../img/bigbg3@2x.png);
 }
 
-/* line 523, ../sass/marfa.scss */
+/* line 526, ../sass/marfa.scss */
 #Marfa4 {
   background-image: url(../img/bigbg4@2x.png);
-  height: 1200px;
+  height: 1400px;
 }
 
-/* line 528, ../sass/marfa.scss */
+/* line 531, ../sass/marfa.scss */
 .Layer {
   position: absolute;
   width: 100%;
   height: 100%;
 }
 
-/* line 534, ../sass/marfa.scss */
+/* line 537, ../sass/marfa.scss */
 #Layer1 {
   z-index: 1;
 }
 
-/* line 538, ../sass/marfa.scss */
+/* line 541, ../sass/marfa.scss */
 #Layer2 {
   z-index: 2;
 }
 
-/* line 542, ../sass/marfa.scss */
+/* line 545, ../sass/marfa.scss */
 #Layer3 {
   z-index: 3;
 }
 
-/* line 547, ../sass/marfa.scss */
+/* line 550, ../sass/marfa.scss */
 .BgImage {
   background-size: 55% auto;
   background-position: center;
@@ -689,7 +692,7 @@ aside .Images img.horz {
   height: 1100px;
 }
 
-/* line 558, ../sass/marfa.scss */
+/* line 561, ../sass/marfa.scss */
 #Intro {
   background-image: url(http://marfajournal.com/images/kit_run.gif);
   background-color: white;
@@ -699,56 +702,56 @@ aside .Images img.horz {
   height: 1200px;
 }
 
-/* line 566, ../sass/marfa.scss */
+/* line 569, ../sass/marfa.scss */
 #Red {
-  background-color: #de4627;
-  height: 3400px;
+  background-color: #f16e59;
+  height: 3800px;
 }
 
-/* line 570, ../sass/marfa.scss */
+/* line 573, ../sass/marfa.scss */
 #Bra {
   background-image: url(../img/marfa7.jpg);
   background-size: 60%;
-  background-color: #de4627;
-  height: 2000px;
+  background-color: #f16e59;
+  height: 600px;
 }
 
-/* line 576, ../sass/marfa.scss */
+/* line 579, ../sass/marfa.scss */
 #Caught {
   background-size: 60%;
-  background-color: #de4627;
+  background-color: #f16e59;
   height: 3900px;
 }
 
-/* line 581, ../sass/marfa.scss */
+/* line 584, ../sass/marfa.scss */
 #Linds {
   background-image: url(../img/linds.jpg);
   background-size: 72%;
   height: 1100px;
 }
 
-/* line 586, ../sass/marfa.scss */
+/* line 589, ../sass/marfa.scss */
 #Next {
   background-position: bottom;
   background-attachment: scroll;
-  background-color: #DE4627;
+  background-color: #e16046;
   background-size: 100% auto;
 }
 
-/* line 593, ../sass/marfa.scss */
+/* line 596, ../sass/marfa.scss */
 #White {
-  background-color: #007487;
+  background-color: #2ab6ce;
   height: 2800px;
 }
 
-/* line 598, ../sass/marfa.scss */
+/* line 601, ../sass/marfa.scss */
 #Madchen {
-  background-image: url(../img/madchen.jpg);
+  background-image: url(../img/marfa5.jpg);
   background-size: 60%;
   height: 1200px;
 }
 
-/* line 604, ../sass/marfa.scss */
+/* line 608, ../sass/marfa.scss */
 #AboutText {
   display: block;
   width: 542px;
@@ -756,27 +759,27 @@ aside .Images img.horz {
   margin: 0px auto 400px;
 }
 
-/* line 611, ../sass/marfa.scss */
+/* line 615, ../sass/marfa.scss */
 #Cabinet {
   display: block;
   width: 200px;
   margin: 600px auto 500px;
 }
 
-/* line 617, ../sass/marfa.scss */
+/* line 621, ../sass/marfa.scss */
 #ShopGif {
   display: block;
   width: 200px;
   margin: 40px auto 300px;
 }
 
-/* line 623, ../sass/marfa.scss */
+/* line 627, ../sass/marfa.scss */
 #Covers {
   background: white;
   border: 50px solid white;
 }
 
-/* line 628, ../sass/marfa.scss */
+/* line 632, ../sass/marfa.scss */
 #StockistsGif {
   width: 200px;
   display: block;

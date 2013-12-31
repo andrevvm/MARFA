@@ -222,7 +222,7 @@ aside {
   &#About {
     margin-top: 0px;
     padding-top: 50px;
-    height: 7400px;
+    height: 7500px;
 
     h1 {
       top: 290px;
@@ -250,7 +250,9 @@ aside {
       text-transform: uppercase;
       color: black;
       margin: 50px 0;
-      //@include animation(400ms, blink);
+      a {
+        @include animation(400ms, blink);
+      }
     }
   }
   &#Stockists {
@@ -262,9 +264,9 @@ aside {
     }
   }
   &#Contact {
-    height: 1300px;
+    height: 1800px;
     h1 {
-      top: 200px;
+      top: 300px;
     }
     img {
       width: 500px;
@@ -272,7 +274,7 @@ aside {
     }
     .Text {
       position: relative;
-      top: 400px;
+      top: 800px;
       font-size: 32px;
       color: #999;
       p {
@@ -304,6 +306,7 @@ aside {
   }
 
   .Images {
+    margin-top: 100px;
     img {
       width: 350px;
       margin: 50px;
@@ -502,6 +505,9 @@ and (max-device-width : 480px) {
     width: 400px;
     margin: 300px auto 50px;
   }
+  &#NewsletterText {
+    margin-top: 50px;
+  }
   a {
     color: $red;
     &:hover {
@@ -512,7 +518,7 @@ and (max-device-width : 480px) {
 
 #Marfa {
   background-image: url(../img/bigbg@2x.png);
-  height: 9400px;
+  height: 9500px;
 }
 
 #Marfa2 {
@@ -526,7 +532,7 @@ and (max-device-width : 480px) {
 
 #Marfa4 {
   background-image: url(../img/bigbg4@2x.png);
-  height: 1500px;
+  height: 2100px;
 }
 
 .Layer {
@@ -569,7 +575,7 @@ and (max-device-width : 480px) {
 }
 #Red {
   background-color: $light_red;
-  height: 3800px;
+  height: 3650px;
 }
 #Bra {
   background-image: url(../img/marfa7.jpg);
@@ -596,12 +602,12 @@ and (max-device-width : 480px) {
 
 #White {
   background-color: $light_blue;
-  height: 2800px;
+  height: 3000px;
 }
 
 #Madchen {
-  background-image: url(../img/marfa5.jpg);
-  background-size: 60%;
+  background-image: url(../img/rock.jpg);
+  background-size: 80%;
   height: 1200px;
 }
 

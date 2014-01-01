@@ -265,6 +265,12 @@ aside {
   }
   &#Contact {
     height: 1800px;
+    #Dancer {
+      width: auto;
+      height: auto;
+      margin-top: 150px;
+      z-index: 0;
+    }
     h1 {
       top: 300px;
     }
@@ -274,7 +280,7 @@ aside {
     }
     .Text {
       position: relative;
-      top: 800px;
+      top: 400px;
       font-size: 32px;
       color: #999;
       p {
@@ -581,7 +587,7 @@ and (max-device-width : 480px) {
   background-image: url(../img/marfa7.jpg);
   background-size: 60%;
   background-color: $light_red;
-  height: 600px;
+  height: 700px;
 }
 #Caught {
   background-size: 60%;

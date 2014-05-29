@@ -5,19 +5,21 @@ $(function() {
   });
   var sections = new Array();
   
-  $(window).scroll(function() {
-    if($(window).scrollTop() <= parseInt($('#IntroSection').css('padding-top'),10)) {
-      $('input').removeAttr('checked');
-      return false;
-    }
-    $('#Layer2 aside').each(function() {
-      var el = this;
-      if(!isScrolledIntoView(el)) {
-        $("#"+ $(el).attr('data-rel')).prop('checked',true);
-      }
-    });
-  });
+  setInterval(scroller,50);
 });
+
+function scroller() {
+  if($(window).scrollTop() <= parseInt($('#IntroSection').css('padding-top'),10)) {
+    $('input').removeAttr('checked');
+    return false;
+  }
+  $('#Layer2 aside').each(function() {
+    var el = this;
+    if(!isScrolledIntoView(el)) {
+      $("#"+ $(el).attr('data-rel')).prop('checked',true);
+    }
+  });
+}
 
 
 function isScrolledIntoView(elem)

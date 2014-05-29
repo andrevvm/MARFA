@@ -10,15 +10,10 @@ $frutiger: Frutiger, sans-serif;
 @import "compass/reset";
 @import "compass/css3/transition";
 
-/*
-    Example usage: 
-    @include animation(10s, 5s, changecolour)
- */
+
 @mixin animation ($duration, $animation) {
     -webkit-animation: $animation $duration linear;
-    -webkit-animation-iteration-count: infinite;
- 
-    
+    -webkit-animation-iteration-count: infinite;    
 }
 
 @mixin keyframe ($animation_name) {

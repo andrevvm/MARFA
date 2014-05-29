@@ -5,7 +5,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title></title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
@@ -24,27 +23,30 @@
         <input type="radio" name="navSelect" id="ContactRadio" />
 
         <nav>
-            <ul class="ContactSelected">
+            <ul>
 
                 <li id="NavAbout">
-                    <label for="AboutRadio" data-href="#About">
+                    <a href="#About">
                         About
-                    </label>
+                    </a>
                 </li>
                 <li id="NavStockists">
-                    <label for="StockistsRadio" data-href="#Marfa2">
+                    <a href="#Stockists">
                         Stockists
-                    </label>
+                    </a>
                 </li>
                 <li id="NavShop">
-                    <label for="ShopRadio" data-href="#Marfa3">
+                    <a href="#Shop">
                         Shop
-                    </label>
+                    </a>
                 </li>
                 <li id="NavContact">
-                    <label for="ContactRadio" data-href="#Marfa4">
+                    <a href="#Contact">
                         Contact
-                    </label>
+                    </a>
+                </li>
+                <li id="NavDaily">
+                    <a href="#">Daily</a>
                 </li>
             </ul>
         </nav>
@@ -63,30 +65,265 @@
             </aside>
 
             <aside id="About">
-                <img src="img/about.png" id="AboutText" />
-                <img src="img/cabine.gif" id="Cabinet" />
+                <h1>About</h1>
+                <img src="img/aerobics.gif" id="Aerobics" />
+                <div class="Chateau">
+                    <div class="answer">
+                        <div class="text">
+                        <span class="question">MARFA JOURNAL</span> is a new printed publication inspired by Marfa, TX and created <span class="question">BY ARTISTS FOR ARTISTS.</span> </p>
+                        <p>Marfa, TX is a small town of just over 2,000 people located in the middle of the desert not far from the Mexican border, which attracts attention of the art world since the 60s. Marfa is a capital of cultural disorder and <span class="question">WE LIKE THAT.</span></p>
+                        <p>Launching in May 2013 - <span class="question">MARFA JOURNAL</span> is a platform that connects contemporary high end <span class="question">FASHION</span> and <span class="question">ART</span>.</p>
+                        <p>300 pages of <span class="question">MARFA JOURNAL</span> #1 are split into 6 sections :</p>
+                        <span class="question" style="font-size:40px">
+                        <p class="big">
+                          RAW<br />
+                          CASUAL<br />
+                          DECADENT<br />
+                          ROMANTIC<br />
+                          OBSCURE<br />
+                          PROGRESSIVE</p>
+                          </span>
+                        <p>So let's make art, hang out and stay awesome!<br />
+                          Let's create a world <span class="question">BY ARTISTS FOR ARTISTS</span>.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="Images">
+                    <img src="img/skate.jpg" id="Skate" class="horz" />
+                    <br/>
+                    <img src="img/Ob.jpg" id="" />
+                    <img src="img/Hotel.jpg" id="" />
+                    <br/>
+                    <img src="img/nudie.jpg" id="" />
+                    <div class="TextBlock" id="Insane">
+                        As long as I'm Insane<br/>
+                        I'm safe
+                    </div>
+                </div>
             </aside>
 
-            <img src="img/robez.gif" id="Robez" />
+            <aside id="Shop">
+                <h1>Shop</h1>
+                <img src="img/cabine.gif" id="ShopGif" />
+
+                <img src="img/covers.png" id="Covers" />
+                <h2>Order Now</h2>
+            </aside>
+
+            <aside id="Stockists">
+                <h1>Stockists</h1>
+                <img src="img/robez.gif" id="StockistsGif" />
+
+
+
+                <ul id="StockistsList">
+                    <li><label for="EuropeOp">Europe</label>
+                        <header>London</header>
+                        <ul>
+                            
+                            <li>
+                            <a href="http://london.doverstreetmarket.com/" target="_blank">Idea Books DSM</a>
+                            <div class="info">
+                                17-18 Dover St, London W1S 4LT
+                            </div>
+                            </li>
+                            <li>
+                            <a href="http://www.ica.org.uk/" target="_blank">ICA</a>
+                            <div class="info">
+                                The Mall, London, SW1Y 5AHS
+                            </div>
+                            </li>
+                            <li>
+                            <a href="http://www.serpentinegallery.org/" target="_blank">
+                                Koenig Books at the Serpentine Gallery
+                            </a>
+                              <div class="info">
+                                Kensington Gardens, London, W2 3XA
+                                </div>
+                            </li>
+                            <li>
+                            <a href="http://goodhoodstore.com/" target="_blank">Goodhood</a>
+                            <div class="info">
+                                41 Coronet St, London, N1 6HD
+                            </div>
+                            </li>
+                            <li>
+                            <a href="http://www.openingceremony.us/" target="_blank">Opening Ceremony</a>
+                            <div class="info">
+                                35 King St, London, WC2E 8JG
+                            </div>
+                            </li>
+                            <li>
+                            <a href="http://www.clairederouenbooks.com/" target="_blank">Claire de Rouen</a>
+                            <div class="info">
+                                125 Charing Cross Rd, London, London, WC2H 0EW
+                            </div>
+                            </li>
+                            <li>
+                            <a href="http://www.tipitin.com/" target="_blank">Ti Pi Tin</a>
+                            <div class="info">
+                                47 Stoke Newington High St, London, N16 8EL
+                            </div>
+                            </li>
+                            <li>
+                            <a href="http://www.maharishistore.com/" target="_blank">Maharishi</a>
+                            <div class="info">
+                            ‎2-3 Great Pulteney Street, London, W1F 9LY
+                            </div>
+                            </li>
+                            <li>
+                            <a href="http://store.huhmagazine.co.uk/" target="_blank">Huh</a>
+                            <div class="info">
+                                56 Stoke Newington Rd, London, N16 7XB
+                            </div>
+                            </li>
+                            <li>
+                            <span>Creative Review Wardour Street</span>
+                            <div class="info">
+                                TBC 
+                            </div>
+                            </li>
+                            <li>
+                            <span>Creative Review Berwick Street</span>
+                            <div class="info">
+                                TBC 
+                            </div>
+                            </li>
+                            <li>
+                            <a href="http://www.artwords.co.uk/" target="_blank">Artwords Bookshop Rivington Street</a>
+                            <div class="info">
+                                69 Rivington Street London EC2A 3AY
+                            </div>
+                            </li>
+                            <li>
+                            <a href="http://www.artwords.co.uk/" target="_blank">Artwords Bookshop Broadway Market</a>
+                            <div class="info">
+                                20-22 Broadway Market
+                            London E8 4QJ
+                            </div>
+                            </li>
+                        </ul>
+                        <header>Paris</header>
+                        <ul>
+                            <li>
+                            <a href="http://www.colette.fr/" target="_blank">Colette</a>
+                            <div class="info">
+                                213 Rue Saint-Honoré 75001 Paris
+                            </div>
+                            </li>
+                            <li>
+                            <a href="https://www.kenzo.com/" target="_blank">Kenzo Boutique Rue de Rennes</a>
+                            <div class="info">
+                                60-62 Rue de Rennes 75006 Paris
+                            </div>
+                            </li>
+                            <li>
+                            <a href="https://www.kenzo.com/" target="_blank">Kenzo  Boutique George V</a>
+                            <div class="info">
+                                51 Avenue George V 75008 Paris
+                            </div>
+                            </li>
+                            <li>
+                            <a href="https://www.kenzo.com/" target="_blank">Kenzo Boutique Madeleine</a>
+                            <div class="info">
+                                27 Boulevard de la Madeleine 75008 Paris
+                            </div>
+                            </li>
+                        </ul>
+                        <header>Germany</header>
+                        <ul>
+                            <li>
+                            <a href="http://www.doyoureadme.de/" target="_blank">do you read me?!</a>
+                            <div class="info">
+                                 Auguststrasse 28, 10117 Berlin-Mitte
+                            </div>
+                            </li>
+                            <li>
+                            <a href="http://www.sodabooks.com/index.php/" target="_blank">Soda Books</a>
+                            </li>
+                        </ul>
+                        <header>NETHERLANDS</header>
+                        <ul>
+                            <li>
+                            <a href="http://www.athenaeum.nl/" target="_blank">Athenaeum Boekhandel</a>
+                            <div class="info">
+                                 Spui 14-16 Amsterdam, 1012 XA
+                            </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><label for="NorthAmOp">North America</label>
+                        <header>USA</header>
+                        <ul>
+                            
+                            <li>
+                            <a href="http://newdistributionhouse.com/products/marfa-journal-01" target="_blank">New Distribution House</a>
+                            </li>
+                        </ul>
+                        <header>Canada</header>
+                        <ul>
+                            
+                            <li>
+                            <a href="http://newdistributionhouse.com/products/marfa-journal-01" target="_blank">New Distribution House</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><label for="NorthAmOp">Australia</label>
+                        <header>&#x270C;</header>
+                        <ul>
+                            <li>
+                            <a href="http://www.magnation.com/index.php?do=storeLocation" target="_blank">mag nation</a>
+                            <div class="info">
+                                88 Elizabeth St, Melbourne, Victoria 3000
+                            </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><label for="NorthAmOp">Japan</label>
+                        <header>&#x2744;</header>
+                        <ul>
+                            <li>
+                            <a href="http://www.bonjour.jp/shops/" target="_blank">bonjour records</a>
+                            <div class="info">
+                                24-1, Sarugaku-cho, Shibuya-ku, Tokyo, Japan
+                            </div>
+                            </li>
+                            <li>
+                            <a href="http://www.standardbookstore.com/" target="_blank">Standard Bookstore</a>
+                            <div class="info">
+                                Osaka 2-2-12 Nishi, Christa Grand Building 1F BF
+                            </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+
+            </aside>
+
+            <aside id="Contact">
+                <h1>Contact</h1>
+            </aside>
 
         </div>
 
         <!-- MIDDLE LAYER -->
         <div class="Layer" id="Layer2">
 
-            <aside id="Marfa">
+            <aside id="Marfa" data-rel="AboutRadio">
 
             </aside>
 
-            <aside id="Marfa2">
+            <aside id="Marfa2" data-rel="ShopRadio">
 
             </aside>
 
-            <aside id="Marfa3">
+            <aside id="Marfa3" data-rel="StockistsRadio">
 
             </aside>
 
-            <aside id="Marfa4">
+            <aside id="Marfa4" data-rel="ContactRadio">
 
             </aside>
 
@@ -96,8 +333,10 @@
         <div class="Layer" id="Layer1">
         
             <aside class="BgImage" id="Intro"></aside>
-            <aside class="BgImage" id="Next"></aside>
             <aside class="BgImage" id="Red"></aside>
+            <aside class="BgImage" id="Bra"></aside>
+            <aside class="BgImage" id="Caught"></aside>
+            <aside class="BgImage" id="Next"></aside>
             <aside class="BgImage" id="White"></aside>
 
         </div>

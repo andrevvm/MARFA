@@ -1,8 +1,8 @@
 $red: #e16046;
 $dark_red: #DE4627;
 $light_red: #f16e59;
-$light_yellow: #FACA99;
-$light_blue: #2ab6ce;
+$light_yellow: #E3D57D;
+$light_blue: #92A7CA;
 
 $honda: Honda, serif;
 $frutiger: Frutiger, sans-serif;
@@ -148,7 +148,7 @@ input[name=navSelect] {
 
 #AboutRadio:checked ~ nav {
   li a {
-    color: $light_red;
+    color: $dark_red;
   }
 
   li#NavAbout a {
@@ -156,22 +156,23 @@ input[name=navSelect] {
   }
 }
 
-#StockistsRadio:checked ~ nav {
+
+#ShopRadio:checked ~ nav {
   li a {
     color: $light_blue;
   }
 
-  li#NavStockists a {
+  li#NavShop a {
     color: white;
   }
 }
 
-#ShopRadio:checked ~ nav {
+#StockistsRadio:checked ~ nav {
   li a {
-    color: $red;
+    color: $light_yellow;
   }
 
-  li#NavShop a {
+  li#NavStockists a {
     color: white;
   }
 }
@@ -217,7 +218,7 @@ aside {
   &#About {
     margin-top: 0px;
     padding-top: 50px;
-    height: 9500px;
+    height: 10700px;
 
     h1 {
       top: 290px;
@@ -238,11 +239,12 @@ aside {
   }
   &#Shop {
     padding-top: 12%;
-    height: 2800px;
+    height: 3300px;
     h1 {
-      top: 420px;
+      top: 400px;
       font-size: 72px;
     }
+
     h2 {
       font-size: 56px;
       text-transform: uppercase;
@@ -252,9 +254,45 @@ aside {
         @include animation(400ms, blink);
       }
     }
+
+    table {
+      margin: 20px auto;
+      text-align: center;
+      font-family: $honda;
+      font-size: 46px;
+      line-height: 58px;
+      p {
+        font-size: 16px;
+        font-family: $frutiger;
+      }
+      td {
+        text-align: center;
+      }
+      select {
+        border: 1px solid black;
+        font-family: $frutiger;
+        font-size: 20px;
+      }
+    }
+    button {
+      -webkit-appearance: none;
+      font-size: 64px;
+      text-transform: uppercase;
+      color: white;
+      margin: 0px 0;
+      background: none;
+      border: 0;
+      outline: none;
+      span {
+        font-family: $honda;
+        &:hover {
+          @include animation(400ms, blink);
+        }
+      }
+    }
   }
   &#Stockists {
-    height: 4300px;
+    height: 4400px;
     padding-top: 8%;
     h1 {
       top: 300px;
@@ -262,7 +300,7 @@ aside {
     }
   }
   &#Contact {
-    height: 1800px;
+    height: 1200px;
     #Dancer {
       width: auto;
       height: auto;
@@ -277,6 +315,12 @@ aside {
       width: 500px;
       height: auto;
     }
+
+    .IssueLink {
+      font-family: $honda;
+      text-transform: uppercase;
+    }
+
     .Text {
       position: relative;
       top: 400px;
@@ -335,7 +379,6 @@ aside {
   label {
     font-family: $honda;
     font-size: 56px;
-    cursor: pointer;
     text-transform: uppercase;
     line-height: 1.6em;
     letter-spacing: 2px;
@@ -361,9 +404,9 @@ aside {
     clear: both;
     text-transform: uppercase;
     font-size: 20px;
-    margin: 0 0 10px;
+    margin: 0 20px 10px;
     letter-spacing: 2px;
-    padding: 40px 0 0px;
+    padding: 40px 10px 0px;
     line-height: 1em;
     text-align: left;
     color: white;
@@ -413,46 +456,38 @@ aside {
   }
 }
 
-.Chateau {
+.AboutText {
   width: 600px;
   margin: 0 auto;
   line-height: 20px;
+  background: white;
   p {
     margin: 15px 0;
+    line-height: 32px;
   }
-  .question {
+  strong {
     font-family: $honda;
-    font-size: 20px;
-    color: #00a2b4;
-    letter-spacing: 2px;
+    font-size: 28px;
+    letter-spacing: 0;
     text-align: center;
     font-style: normal;
+    font-weight: normal;
     line-height: 1.1em;
-  }
-  .answer {
-    font-family: $frutiger;
-    font-size: 15px;
-    color: #000000;
-    letter-spacing: 1px;
-    text-align: left;
-    top: 0px;
-    left: 0px;
-    background: #F2F7EC url(../img/chateau.png) top center no-repeat;
-    border-image-repeat: none;
-    padding-top: 1px;
-
+    text-transform: uppercase;
   }
   .text {
     font-family: $frutiger;
-    font-size: 15px;
+    font-size: 18px;
     color: #000000;
-    letter-spacing: 1px;
     text-align: justify;
     position: relative;
-    margin-left: 70px;
-    margin-top: 170px;
-    margin-right: 70px;
-    padding-bottom: 60px;
+    padding: 60px 70px;
+    line-height: 32px;
+  }
+
+  img {
+    display: block;
+    margin: 30px auto;
   }
 }
 
@@ -498,7 +533,7 @@ and (max-device-width : 480px) {
   line-height: 1em;
   &#Insane {
     text-transform: uppercase;
-    width: 500px;
+    width: 300px;
     font-size: 56px;
     line-height: 1em;
     padding: 25px 20px 20px;
@@ -514,9 +549,12 @@ and (max-device-width : 480px) {
     margin-top: 50px;
   }
   a {
-    color: $red;
+    color: black;
     &:hover {
-      text-decoration: underline;
+      color: $dark_red;
+      small {
+        color: $dark_red !important;
+      }
     }
   }
   &#Marfart {
@@ -533,21 +571,22 @@ and (max-device-width : 480px) {
 
 #Marfa {
   background-image: url(../img/bigbg@2x.png);
-  height: 11500px;
+  height: 12400px;
 }
 
 #Marfa2 {
   background-image: url(../img/bigbg2@2x.png);
-  height: 2800px;
+  height: 3000px;
 }
 
 #Marfa3 {
   background-image: url(../img/bigbg3@2x.png);
+  height: 4400px;
 }
 
 #Marfa4 {
   background-image: url(../img/bigbg4@2x.png);
-  height: 2450px;
+  height: 3050px;
 }
 
 .Layer {
@@ -581,32 +620,40 @@ and (max-device-width : 480px) {
 }
 
 #Intro {
-  background-image: url(../img/kit_run.gif);
+  background-image: url(../img/intro.jpg);
   background-color: white;
-  background-size: 20% auto;
+  background-size: 80% auto;
   background-position: center;
   background-attachment: fixed;
   height: 1000px;
 }
 #Red {
-  background-color: $light_red;
-  height: 3850px;
+  background-color: $dark_red;
+  height: 4000px;
 }
-#Bra {
-  background-image: url(../img/marfa7.jpg);
+
+#Water {
+  background-image: url(../img/water.jpg);
   background-size: 60%;
   background-color: $light_red;
-  height: 700px;
+  height: 800px;
 }
 #Caught {
   background-size: 60%;
-  background-color: $light_red;
-  height: 6900px;
+  background-color: $dark_red;
+  height: 4500px;
 }
+
+#ShopBg {
+  background-color: $light_blue;
+  height: 3750px;
+}
+
 #Linds {
-  background-image: url(../img/linds.jpg);
-  background-size: 72%;
-  height: 1140px;
+  background-image: url(../img/2/cover03.jpg);
+  background-position: center;
+  background-size: 50%;
+  height: 840px;
 }
 #Next {
   background-position: bottom;
@@ -616,13 +663,14 @@ and (max-device-width : 480px) {
 }
 
 #White {
-  background-color: $light_blue;
-  height: 3000px;
+  background-color: $light_yellow;
+  height: 3700px;
 }
 
 #Madchen {
-  background-image: url(../img/rock.jpg);
-  background-size: 80%;
+  background-image: url(../img/2/cover04.jpg);
+  background-position: center;
+  background-size: 60%;
   height: 1200px;
 }
 

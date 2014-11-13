@@ -1,0 +1,10 @@
+#Background {
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  mask: url(../img/logo.svg) top left / cover;
+}
+
+#Background img {
+  mask: url(../img/logo.svg) top left / cover;
+}

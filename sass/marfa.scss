@@ -4,6 +4,12 @@ $light_red: #f16e59;
 $light_yellow: #E3D57D;
 $light_blue: #92A7CA;
 
+
+// Issue 3 colors
+$deep_purple: #1c1c42;
+$light_pink: #ffbeda;
+$dark_green: #1a5c41;
+
 $honda: Honda, serif;
 $frutiger: Frutiger, sans-serif;
 
@@ -70,6 +76,7 @@ body, html {
   min-width: 400px;
   height: 100%;
   font-family: $frutiger;
+  background: black;
 }
 
 a {
@@ -92,7 +99,7 @@ nav {
   text-transform: uppercase;
   text-align: center;
   a {
-    color: black;
+    color: #d0c5cb;
   }
   li {
     position: fixed;
@@ -148,7 +155,7 @@ input[name=navSelect] {
 
 #AboutRadio:checked ~ nav {
   li a {
-    color: $dark_red;
+    color: $light_pink;
   }
 
   li#NavAbout a {
@@ -159,7 +166,7 @@ input[name=navSelect] {
 
 #ShopRadio:checked ~ nav {
   li a {
-    color: $light_blue;
+    color: $dark_green;
   }
 
   li#NavShop a {
@@ -241,7 +248,7 @@ aside {
     padding-top: 12%;
     height: 3300px;
     h1 {
-      top: 400px;
+      top: 360px;
       font-size: 72px;
     }
 
@@ -494,9 +501,7 @@ aside {
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
- body {
-  background-color: white;
- }
+
  aside {
     background-attachment: scroll;
   }
@@ -531,13 +536,13 @@ and (max-device-width : 480px) {
   text-align: center;
   font-size: 64px;
   line-height: 1em;
-  &#Insane {
+  &#DividerText {
     text-transform: uppercase;
     width: 300px;
     font-size: 56px;
     line-height: 1em;
     padding: 25px 20px 20px;
-    margin-top: 430px;
+    margin-top: 550px;
     margin-bottom: 400px;
   }
   &.Newsletter {
@@ -570,23 +575,23 @@ and (max-device-width : 480px) {
 }
 
 #Marfa {
-  background-image: url(../img/bigbg@2x.png);
+  background-image: url(../img/3/bigbg@2x.png);
   height: 12400px;
 }
 
 #Marfa2 {
-  background-image: url(../img/bigbg2@2x.png);
+  background-image: url(../img/3/bigbg2@2x.png);
   height: 3000px;
 }
 
 #Marfa3 {
-  background-image: url(../img/bigbg3@2x.png);
+  background-image: url(../img/3/bigbg3@2x.png);
   height: 4400px;
 }
 
 #Marfa4 {
-  background-image: url(../img/bigbg4@2x.png);
-  height: 3050px;
+  background-image: url(../img/3/bigbg4@2x.png);
+  height: 3100px;
 }
 
 .Layer {
@@ -615,63 +620,67 @@ and (max-device-width : 480px) {
   min-width: 400px;
   margin: 0 auto;
   position: relative;
-  top: 100%;
   height: 1100px;
 }
 
+#Start {
+  height: 100%;
+  top: 0;
+  background: #d0c5cb;
+}
+
 #Intro {
-  background-image: url(../img/intro.jpg);
+  background-image: url(../img/3/intro.jpg);
   background-color: white;
-  background-size: 80% auto;
+  background-size: 60% auto;
   background-position: center;
   background-attachment: fixed;
   height: 1000px;
 }
-#Red {
-  background-color: $dark_red;
+#AboutStart {
+  background-color: $light_pink;
   height: 4000px;
 }
 
-#Water {
-  background-image: url(../img/water.jpg);
+#Divider1 {
+  background-image: url(../img/3/divider1.jpg);
   background-size: 60%;
   background-color: $light_red;
   height: 800px;
 }
-#Caught {
+#Color1 {
   background-size: 60%;
-  background-color: $dark_red;
+  background-color: $light_pink;
   height: 4500px;
 }
 
 #ShopBg {
-  background-color: $light_blue;
+  background-color: $dark_green;
   height: 3750px;
 }
 
-#Linds {
-  background-image: url(../img/2/cover03.jpg);
+#Divider2 {
+  background-image: url(../img/3/divider2.jpg);
   background-position: center;
-  background-size: 50%;
-  height: 840px;
-}
-#Next {
-  background-position: bottom;
-  background-attachment: scroll;
-  background-color: $red;
-  background-size: 100% auto;
+  background-size: 60%;
+  height: 1300px;
 }
 
-#White {
-  background-color: $light_yellow;
-  height: 3700px;
+#StockistBg {
+  background-color: #81837e;
+  height: 3400px;
 }
 
-#Madchen {
-  background-image: url(../img/2/cover04.jpg);
+#Divider3 {
+  background-image: url(../img/3/divider3.jpg);
   background-position: center;
   background-size: 60%;
   height: 1200px;
+}
+
+#ContactBg {
+  background: black;
+  height: 2000px;
 }
 
 
@@ -690,7 +699,7 @@ and (max-device-width : 480px) {
 
 #ShopGif {
   display: block;
-  width: 200px;
+  width: 300px;
   margin: 40px auto 300px;
 }
 

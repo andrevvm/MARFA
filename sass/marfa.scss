@@ -319,7 +319,7 @@ aside {
       font-size: 72px;
     }
     img {
-      width: 500px;
+      width: 400px;
       height: auto;
     }
 
@@ -369,6 +369,10 @@ aside {
       vertical-align: middle;
       &.horz {
         width: 700px;
+
+        &.sm {
+          width: 500px;
+        }
       }
     }
   }
@@ -474,7 +478,7 @@ aside {
   }
   strong {
     font-family: $honda;
-    font-size: 28px;
+    font-size: 24px;
     letter-spacing: 0;
     text-align: center;
     font-style: normal;
@@ -527,15 +531,21 @@ and (max-device-width : 480px) {
 }
 
 .TextBlock {
-  width: 280px;
+  width: 300px;
   margin: 0 auto;
-  padding: 50px 50px 50px;
+  padding: 10px;
   background: white;
   color: black;
   font-family: $honda;
   text-align: center;
   font-size: 64px;
   line-height: 1em;
+
+  .Motto {
+    width: 240px;
+    height: auto;
+  }
+
   &#DividerText {
     text-transform: uppercase;
     width: 300px;
@@ -591,7 +601,7 @@ and (max-device-width : 480px) {
 
 #Marfa4 {
   background-image: url(../img/3/bigbg4@2x.png);
-  height: 3100px;
+  height: 3200px;
 }
 
 .Layer {
@@ -651,12 +661,12 @@ and (max-device-width : 480px) {
 #Color1 {
   background-size: 60%;
   background-color: $light_pink;
-  height: 4500px;
+  height: 4000px;
 }
 
 #ShopBg {
   background-color: $dark_green;
-  height: 3750px;
+  height: 4250px;
 }
 
 #Divider2 {

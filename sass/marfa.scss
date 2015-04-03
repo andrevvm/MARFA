@@ -1,5 +1,5 @@
 $red: #e16046;
-$dark_red: #DE4627;
+$dark_red: #BA3F15;
 $light_red: #f16e59;
 $light_yellow: #E3D57D;
 $light_blue: #92A7CA;
@@ -8,7 +8,7 @@ $light_blue: #92A7CA;
 // Issue 3 colors
 $deep_purple: #1c1c42;
 $light_pink: #ffbeda;
-$dark_green: #1a5c41;
+$dark_green: #146747;
 
 $honda: Honda, serif;
 $frutiger: Frutiger, sans-serif;
@@ -186,7 +186,7 @@ input[name=navSelect] {
 
 #ContactRadio:checked ~ nav {
   li a {
-    color: black;
+    color: $dark_red;
   }
 
   li#NavContact a {
@@ -246,7 +246,7 @@ aside {
   }
   &#Shop {
     padding-top: 12%;
-    height: 3300px;
+    height: 3500px;
     h1 {
       top: 360px;
       font-size: 72px;
@@ -307,7 +307,7 @@ aside {
     }
   }
   &#Contact {
-    height: 1200px;
+    height: 1300px;
     #Dancer {
       width: auto;
       height: auto;
@@ -326,17 +326,24 @@ aside {
     .IssueLink {
       font-family: $honda;
       text-transform: uppercase;
+      font-size: 42px;
+    }
+
+    .Social {
+      font-size: 42px;
+      padding: 10px;
     }
 
     .Text {
       position: relative;
       top: 400px;
       font-size: 32px;
-      color: #999;
+      color: #FFF;
       p {
         margin-bottom: 120px;
         &.Website {
           font-size: 0.4em;
+          color: black;
         }
         a {
           text-decoration: none;
@@ -601,7 +608,7 @@ and (max-device-width : 480px) {
 
 #Marfa4 {
   background-image: url(../img/3/bigbg4@2x.png);
-  height: 3200px;
+  height: 3900px;
 }
 
 .Layer {
@@ -660,13 +667,13 @@ and (max-device-width : 480px) {
 }
 #Color1 {
   background-size: 60%;
-  background-color: $light_pink;
+  background-color: $dark_green;
   height: 4000px;
 }
 
 #ShopBg {
   background-color: $dark_green;
-  height: 4250px;
+  height: 4450px;
 }
 
 #Divider2 {
@@ -677,8 +684,8 @@ and (max-device-width : 480px) {
 }
 
 #StockistBg {
-  background-color: #81837e;
-  height: 3400px;
+  background-color: #8a8a8a;
+  height: 3200px;
 }
 
 #Divider3 {
@@ -689,8 +696,8 @@ and (max-device-width : 480px) {
 }
 
 #ContactBg {
-  background: black;
-  height: 2000px;
+  background: $dark_red;
+  height: 3000px;
 }
 
 

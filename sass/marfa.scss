@@ -5,7 +5,37 @@ $light_yellow: #E3D57D;
 $light_blue: #92A7CA;
 
 
-// Issue 3 colors
+
+
+// Issue variables
+
+
+//----- Intro
+
+$intro_bg: #fec43b;
+$intro_nav: #231f20;
+$intro_divider: "../img/intro.jpg";
+
+$about_bg: #fec43b;
+$about_bg1: #BAD0EC;
+$about_bg2: #612228;
+
+$about_img: "../img/about-img.jpg";
+$about_divider: "../img/about-divider.jpg";
+
+$about_height: 12100px;
+$about_bg_height: 14100px;
+
+$shop_img: "../img/shop-img.jpg";
+$shop_divider: "../img/shop-divider.jpg";
+
+$stockist_bg: #E0561A;
+$stockist_nav: #E0561A;
+
+$contact_bg: #1550a4;
+$contact_divider: "../img/contact-divider.jpg";
+$contact_nav: #1550a4;
+
 $deep_purple: #1c1c42;
 $light_pink: #ffbeda;
 $dark_green: #146747;
@@ -73,10 +103,10 @@ $frutiger: Frutiger, sans-serif;
 }
 
 body, html {
-  min-width: 400px;
+  min-width: 950px;
   height: 100%;
   font-family: $frutiger;
-  background: black;
+  background: $contact_bg;
 }
 
 a {
@@ -99,7 +129,7 @@ nav {
   text-transform: uppercase;
   text-align: center;
   a {
-    color: #d0c5cb;
+    color: $intro_nav;
   }
   li {
     position: fixed;
@@ -155,18 +185,18 @@ input[name=navSelect] {
 
 #AboutRadio:checked ~ nav {
   li a {
-    color: $light_pink;
+    color: $intro_nav;
   }
 
   li#NavAbout a {
-    color: white;
+    color: $intro_bg;
   }
 }
 
 
 #ShopRadio:checked ~ nav {
   li a {
-    color: $dark_green;
+    color: $about_bg2;
   }
 
   li#NavShop a {
@@ -176,21 +206,21 @@ input[name=navSelect] {
 
 #StockistsRadio:checked ~ nav {
   li a {
-    color: $light_yellow;
+    color: $intro_nav;
   }
 
   li#NavStockists a {
-    color: white;
+    color: $stockist_nav;
   }
 }
 
 #ContactRadio:checked ~ nav {
   li a {
-    color: $dark_red;
+    color: $intro_nav;
   }
 
   li#NavContact a {
-    color: white;
+    color: $contact_nav;
   }
 }
 
@@ -213,10 +243,10 @@ input[name=navSelect] {
 }
 
 aside {
-  min-width: 400px;
+  min-width: 950px;
   height: 4000px;
   background: no-repeat center fixed;
-  background-size: 100% auto;
+  background-size: 100.5% auto;
   position: relative;
   text-align: center;
   &#IntroSection {
@@ -225,7 +255,7 @@ aside {
   &#About {
     margin-top: 0px;
     padding-top: 50px;
-    height: 10700px;
+    height: $about_height;
 
     h1 {
       top: 290px;
@@ -245,8 +275,8 @@ aside {
 
   }
   &#Shop {
-    padding-top: 12%;
-    height: 3500px;
+    padding-top: 220px;
+    height: 3000px;
     h1 {
       top: 360px;
       font-size: 72px;
@@ -299,7 +329,7 @@ aside {
     }
   }
   &#Stockists {
-    height: 4400px;
+    height: 6600px;
     padding-top: 8%;
     h1 {
       top: 300px;
@@ -307,15 +337,15 @@ aside {
     }
   }
   &#Contact {
-    height: 1300px;
+    height: 2500px;
     #Dancer {
       width: auto;
       height: auto;
-      margin-top: 150px;
+      margin-top: 250px;
       z-index: 0;
     }
     h1 {
-      top: 300px;
+      top: 350px;
       font-size: 72px;
     }
     img {
@@ -336,14 +366,18 @@ aside {
 
     .Text {
       position: relative;
-      top: 400px;
       font-size: 32px;
       color: #FFF;
+      padding-top: 500px;
+      height: 1600px;
       p {
         margin-bottom: 120px;
         &.Website {
           font-size: 0.4em;
           color: black;
+          position: absolute;
+          bottom: 0;
+          width: 100%;
         }
         a {
           text-decoration: none;
@@ -388,11 +422,18 @@ aside {
 #StockistsList {
   width: 700px;
   margin: 0 auto;
-  color: black;
+  color: white;
 
   ul {
     margin: 0;
     padding: 0;
+
+    li:hover {
+      a, span {
+        color: black;
+      }
+    }
+
   }
   label {
     font-family: $honda;
@@ -410,8 +451,11 @@ aside {
   a, span {
     padding: 10px;
     display: inline-block;
-    color: black;
+    color: white;
     font-weight: bold;
+    &:hover {
+      color: black;
+    }
   }
 
   a:hover {
@@ -427,7 +471,7 @@ aside {
     padding: 40px 10px 0px;
     line-height: 1em;
     text-align: left;
-    color: white;
+    color: black;
   }
 
   .info {
@@ -475,7 +519,7 @@ aside {
 }
 
 .AboutText {
-  width: 600px;
+  width: 680px;
   margin: 0 auto;
   line-height: 20px;
   background: white;
@@ -537,6 +581,11 @@ and (max-device-width : 480px) {
   padding-top: 1200px;
 }
 
+.Motto {
+  width: 450px;
+  height: auto;
+}
+
 .TextBlock {
   width: 300px;
   margin: 0 auto;
@@ -548,10 +597,7 @@ and (max-device-width : 480px) {
   font-size: 64px;
   line-height: 1em;
 
-  .Motto {
-    width: 240px;
-    height: auto;
-  }
+  
 
   &#DividerText {
     text-transform: uppercase;
@@ -592,29 +638,30 @@ and (max-device-width : 480px) {
 }
 
 #Marfa {
-  background-image: url(../img/3/bigbg@2x.png);
-  height: 12400px;
+  background-image: url(../img/bigbg1@2x.png);
+  height: $about_bg_height;
 }
 
 #Marfa2 {
-  background-image: url(../img/3/bigbg2@2x.png);
+  background-image: url(../img/bigbg2@2x.png);
   height: 3000px;
 }
 
 #Marfa3 {
-  background-image: url(../img/3/bigbg3@2x.png);
-  height: 4400px;
+  background-image: url(../img/bigbg3@2x.png);
+  height: 6200px;
 }
 
 #Marfa4 {
-  background-image: url(../img/3/bigbg4@2x.png);
-  height: 3900px;
+  background-image: url(../img/bigbg4@2x.png);
+  height: 3600px;
 }
 
 .Layer {
   position: absolute;
   width: 100%;
   height: 100%;
+  min-width: 950px;
 }
 
 #Layer1 {
@@ -634,7 +681,7 @@ and (max-device-width : 480px) {
   background-size: 55% auto;
   background-position: center;
   background-attachment: fixed;
-  min-width: 400px;
+  min-width: 950px;
   margin: 0 auto;
   position: relative;
   height: 1100px;
@@ -643,61 +690,61 @@ and (max-device-width : 480px) {
 #Start {
   height: 100%;
   top: 0;
-  background: #d0c5cb;
+  background: $intro_bg;
 }
 
 #Intro {
-  background-image: url(../img/3/intro.jpg);
+  background-image: url($intro_divider);
   background-color: white;
-  background-size: 60% auto;
-  background-position: center;
+  background-size: 80% auto;
+  background-position: center 50%;
   background-attachment: fixed;
   height: 1000px;
 }
 #AboutStart {
-  background-color: $light_pink;
-  height: 4000px;
+  background-color: $about_bg;
+  height: 4500px;
 }
 
 #Divider1 {
-  background-image: url(../img/3/divider1.jpg);
-  background-size: 60%;
+  background-image: url($about_divider);
+  background-size: 75%;
   background-color: $light_red;
   height: 800px;
 }
 #Color1 {
   background-size: 60%;
-  background-color: $dark_green;
-  height: 4000px;
+  background-color: $about_bg1;
+  height: 3450px;
 }
 
 #ShopBg {
-  background-color: $dark_green;
-  height: 4450px;
+  background-color: $about_bg2;
+  height: 5200px;
 }
 
 #Divider2 {
-  background-image: url(../img/3/divider2.jpg);
+  background-image: url($shop_divider);
   background-position: center;
-  background-size: 60%;
+  background-size: 80%;
   height: 1300px;
 }
 
 #StockistBg {
-  background-color: #8a8a8a;
-  height: 3200px;
+  background-color: $stockist_bg;
+  height: 5500px;
 }
 
 #Divider3 {
-  background-image: url(../img/3/divider3.jpg);
+  background-image: url($contact_divider);
   background-position: center;
-  background-size: 60%;
+  background-size: 80%;
   height: 1100px;
 }
 
 #ContactBg {
-  background: $dark_red;
-  height: 3000px;
+  background: $contact_bg;
+  height: 2200px;
 }
 
 
@@ -716,7 +763,7 @@ and (max-device-width : 480px) {
 
 #ShopGif {
   display: block;
-  width: 300px;
+  width: 400px;
   margin: 40px auto 300px;
 }
 

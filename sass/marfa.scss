@@ -23,8 +23,8 @@ $about_bg2: #612228;
 $about_img: "../img/about-img.jpg";
 $about_divider: "../img/about-divider.jpg";
 
-$about_height: 12100px;
-$about_bg_height: 14100px;
+$about_height: 12500px;
+$about_bg_height: 14450px;
 
 $shop_img: "../img/shop-img.jpg";
 $shop_divider: "../img/shop-divider.jpg";
@@ -654,7 +654,7 @@ and (max-device-width : 480px) {
 
 #Marfa4 {
   background-image: url(../img/bigbg4@2x.png);
-  height: 3600px;
+  height: 3650px;
 }
 
 .Layer {
@@ -703,7 +703,7 @@ and (max-device-width : 480px) {
 }
 #AboutStart {
   background-color: $about_bg;
-  height: 4500px;
+  height: 4780px;
 }
 
 #Divider1 {
@@ -720,7 +720,7 @@ and (max-device-width : 480px) {
 
 #ShopBg {
   background-color: $about_bg2;
-  height: 5200px;
+  height: 5500px;
 }
 
 #Divider2 {

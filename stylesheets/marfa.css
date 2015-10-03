@@ -286,7 +286,7 @@ aside#IntroSection {
 aside#About {
   margin-top: 0px;
   padding-top: 50px;
-  height: 12100px;
+  height: 12500px;
 }
 /* line 260, ../sass/marfa.scss */
 aside#About h1 {
@@ -712,7 +712,7 @@ aside .Images img.horz.sm {
 /* line 640, ../sass/marfa.scss */
 #Marfa {
   background-image: url(../img/bigbg1@2x.png);
-  height: 14100px;
+  height: 14450px;
 }
 
 /* line 645, ../sass/marfa.scss */
@@ -730,7 +730,7 @@ aside .Images img.horz.sm {
 /* line 655, ../sass/marfa.scss */
 #Marfa4 {
   background-image: url(../img/bigbg4@2x.png);
-  height: 3600px;
+  height: 3650px;
 }
 
 /* line 660, ../sass/marfa.scss */
@@ -787,7 +787,7 @@ aside .Images img.horz.sm {
 /* line 704, ../sass/marfa.scss */
 #AboutStart {
   background-color: #fec43b;
-  height: 4500px;
+  height: 4780px;
 }
 
 /* line 709, ../sass/marfa.scss */
@@ -808,7 +808,7 @@ aside .Images img.horz.sm {
 /* line 721, ../sass/marfa.scss */
 #ShopBg {
   background-color: #612228;
-  height: 5200px;
+  height: 5500px;
 }
 
 /* line 726, ../sass/marfa.scss */

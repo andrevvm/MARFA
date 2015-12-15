@@ -371,7 +371,7 @@ aside#Shop button span:hover {
 }
 /* line 331, ../sass/marfa.scss */
 aside#Stockists {
-  height: 6600px;
+  height: 7000px;
   padding-top: 8%;
 }
 /* line 334, ../sass/marfa.scss */
@@ -724,7 +724,7 @@ aside .Images img.horz.sm {
 /* line 650, ../sass/marfa.scss */
 #Marfa3 {
   background-image: url(../img/bigbg3@2x.png);
-  height: 6200px;
+  height: 6600px;
 }
 
 /* line 655, ../sass/marfa.scss */
@@ -822,7 +822,7 @@ aside .Images img.horz.sm {
 /* line 733, ../sass/marfa.scss */
 #StockistBg {
   background-color: #E0561A;
-  height: 5500px;
+  height: 5900px;
 }
 
 /* line 738, ../sass/marfa.scss */

@@ -638,22 +638,22 @@ and (max-device-width : 480px) {
 }
 
 #Marfa {
-  background-image: url(../img/bigbg1@2x.png);
+  background-image: url(../issue-3/img/bigbg1.svg);
   height: $about_bg_height;
 }
 
 #Marfa2 {
-  background-image: url(../img/bigbg2@2x.png);
+  background-image: url(../issue-3/img/bigbg2.svg);
   height: 3000px;
 }
 
 #Marfa3 {
-  background-image: url(../img/bigbg3@2x.png);
+  background-image: url(../issue-3/img/bigbg3.svg);
   height: 6600px;
 }
 
 #Marfa4 {
-  background-image: url(../img/bigbg4@2x.png);
+  background-image: url(../issue-3/img/bigbg4.svg);
   height: 3650px;
 }
 
@@ -674,7 +674,6 @@ and (max-device-width : 480px) {
 
 #Layer3 {
   z-index: 3;
-  
 }
 
 .BgImage {

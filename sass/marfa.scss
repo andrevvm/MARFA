@@ -1,9 +1,12 @@
+@import "compass/css3";
+
 $red: #e16046;
 $dark_red: #BA3F15;
 $light_red: #f16e59;
 $light_yellow: #E3D57D;
 $light_blue: #92A7CA;
 
+$hover_color: #C14B73;
 
 
 
@@ -12,27 +15,29 @@ $light_blue: #92A7CA;
 
 //----- Intro
 
-$intro_bg: #fec43b;
-$intro_nav: #231f20;
+$intro_bg: #ebb5ce;
+$intro_nav: #ebb5ce;
+$intro_height: 1500px;
 $intro_divider: "../img/intro.jpg";
 
-$about_bg: #fec43b;
-$about_bg1: #BAD0EC;
-$about_bg2: #612228;
+$about_bg: #fec775;
+$about_bg1: #9fbbe2;
+$about_bg2: #0c2648;
 
 $about_img: "../img/about-img.jpg";
 $about_divider: "../img/about-divider.jpg";
 
-$about_height: 12500px;
-$about_bg_height: 14450px;
+$about_height: 12700px;
+$about_bg_height: 15450px;
 
 $shop_img: "../img/shop-img.jpg";
 $shop_divider: "../img/shop-divider.jpg";
 
-$stockist_bg: #E0561A;
-$stockist_nav: #E0561A;
+$stockist_bg: #9fbbe2;
+$stockist_nav: white;
 
-$contact_bg: #1550a4;
+$contact_bg: #231f20;
+$contact_height: 2800px;
 $contact_divider: "../img/contact-divider.jpg";
 $contact_nav: #1550a4;
 
@@ -45,12 +50,6 @@ $frutiger: Frutiger, sans-serif;
 
 @import "compass/reset";
 @import "compass/css3/transition";
-
-
-@mixin animation ($duration, $animation) {
-    -webkit-animation: $animation $duration linear;
-    -webkit-animation-iteration-count: infinite;    
-}
 
 @mixin keyframe ($animation_name) {
     @-webkit-keyframes $animation_name {
@@ -70,7 +69,7 @@ $frutiger: Frutiger, sans-serif;
     }
 }
 
-@include keyframe(blink) {
+@include keyframes(blink) {
     0% {
         color: black;
     }
@@ -107,6 +106,10 @@ body, html {
   height: 100%;
   font-family: $frutiger;
   background: $contact_bg;
+}
+
+img {
+  background: none;
 }
 
 a {
@@ -189,7 +192,7 @@ input[name=navSelect] {
   }
 
   li#NavAbout a {
-    color: $intro_bg;
+    color: white;
   }
 }
 
@@ -206,7 +209,7 @@ input[name=navSelect] {
 
 #StockistsRadio:checked ~ nav {
   li a {
-    color: $intro_nav;
+    color: $stockist_bg;
   }
 
   li#NavStockists a {
@@ -216,11 +219,11 @@ input[name=navSelect] {
 
 #ContactRadio:checked ~ nav {
   li a {
-    color: $intro_nav;
+    color: $contact_bg;
   }
 
   li#NavContact a {
-    color: $contact_nav;
+    color: white;
   }
 }
 
@@ -249,8 +252,18 @@ aside {
   background-size: 100.5% auto;
   position: relative;
   text-align: center;
+
   &#IntroSection {
-    height: 800px;
+    height: $intro_height;
+    padding-top: 1300px;
+    font-family: $honda;
+    text-align: center;
+    font-size: 54px;
+    text-transform: uppercase;
+    @include animation(blink 800ms steps(1, end) infinite);
+    a {
+      color: inherit;
+    }
   }
   &#About {
     margin-top: 0px;
@@ -278,8 +291,10 @@ aside {
     padding-top: 220px;
     height: 3000px;
     h1 {
-      top: 360px;
+      top: 280px;
       font-size: 72px;
+      color: black;
+      //@include animation(blink 500ms steps(1, end) infinite);
     }
 
     h2 {
@@ -288,7 +303,7 @@ aside {
       color: black;
       margin: 50px 0;
       a {
-        @include animation(400ms, blink);
+        @include animation(blink 800ms steps(1,end) infinite);
       }
     }
 
@@ -323,7 +338,7 @@ aside {
       span {
         font-family: $honda;
         &:hover {
-          @include animation(400ms, blink);
+          @include animation(blink 400ms);
         }
       }
     }
@@ -337,7 +352,7 @@ aside {
     }
   }
   &#Contact {
-    height: 2500px;
+    height: $contact_height;
     #Dancer {
       width: auto;
       height: auto;
@@ -375,7 +390,6 @@ aside {
         &.Website {
           font-size: 0.4em;
           color: black;
-          position: absolute;
           bottom: 0;
           width: 100%;
         }
@@ -577,12 +591,8 @@ and (max-device-width : 480px) {
   }
 }
 
-#IntroSection {
-  padding-top: 1200px;
-}
-
 .Motto {
-  width: 450px;
+  width: 400px;
   height: auto;
 }
 
@@ -619,9 +629,9 @@ and (max-device-width : 480px) {
   a {
     color: black;
     &:hover {
-      color: $dark_red;
+      color: $hover_color;
       small {
-        color: $dark_red !important;
+        color: $hover_color !important;
       }
     }
   }
@@ -632,29 +642,30 @@ and (max-device-width : 480px) {
       color: black;
     }
     img {
-      margin: auto;
+      min-height: 0;
+      margin: 20px auto 0;
     }
   }
 }
 
 #Marfa {
-  background-image: url(../issue-3/img/bigbg1.svg);
+  background-image: url(../img/bigbg1.svg);
   height: $about_bg_height;
 }
 
 #Marfa2 {
-  background-image: url(../issue-3/img/bigbg2.svg);
+  background-image: url(../img/bigbg2.svg);
   height: 3000px;
 }
 
 #Marfa3 {
-  background-image: url(../issue-3/img/bigbg3.svg);
+  background-image: url(../img/bigbg3.svg);
   height: 6600px;
 }
 
 #Marfa4 {
-  background-image: url(../issue-3/img/bigbg4.svg);
-  height: 3650px;
+  background-image: url(../img/bigbg4.svg);
+  height: 3900px;
 }
 
 .Layer {
@@ -695,10 +706,10 @@ and (max-device-width : 480px) {
 #Intro {
   background-image: url($intro_divider);
   background-color: white;
-  background-size: 80% auto;
+  background-size: 62% auto;
   background-position: center 50%;
   background-attachment: fixed;
-  height: 1000px;
+  height: $intro_height;
 }
 #AboutStart {
   background-color: $about_bg;
@@ -709,24 +720,24 @@ and (max-device-width : 480px) {
   background-image: url($about_divider);
   background-size: 75%;
   background-color: $light_red;
-  height: 800px;
+  height: 900px;
 }
 #Color1 {
   background-size: 60%;
   background-color: $about_bg1;
-  height: 3450px;
+  height: 3050px;
 }
 
 #ShopBg {
   background-color: $about_bg2;
-  height: 5500px;
+  height: 6500px;
 }
 
 #Divider2 {
   background-image: url($shop_divider);
   background-position: center;
   background-size: 80%;
-  height: 1300px;
+  height: 1100px;
 }
 
 #StockistBg {
@@ -743,7 +754,7 @@ and (max-device-width : 480px) {
 
 #ContactBg {
   background: $contact_bg;
-  height: 2200px;
+  height: $contact_height;
 }
 
 
@@ -762,13 +773,14 @@ and (max-device-width : 480px) {
 
 #ShopGif {
   display: block;
-  width: 400px;
+  width: 500px;
   margin: 40px auto 300px;
 }
 
 #Covers {
   background: white;
   border: 50px solid white;
+  width: 800px;
 }
 
 #StockistsGif {

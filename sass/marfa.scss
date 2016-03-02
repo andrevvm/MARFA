@@ -35,6 +35,8 @@ $shop_divider: "../img/shop-divider.jpg";
 
 $stockist_bg: #9fbbe2;
 $stockist_nav: white;
+$stockist_height: 7800px;
+$stockist_bg_height: 6900px;
 
 $contact_bg: #231f20;
 $contact_height: 2800px;
@@ -267,11 +269,11 @@ aside {
   }
   &#About {
     margin-top: 0px;
-    padding-top: 50px;
+    padding-top: 150px;
     height: $about_height;
 
     h1 {
-      top: 290px;
+      top: 380px;
       font-size: 72px;
     }
 
@@ -279,7 +281,7 @@ aside {
       width: 260px;
       height: auto;
       display: block;
-      margin: 50px auto 250px;
+      margin: 50px auto 320px;
     }
 
     #Skate {
@@ -344,7 +346,7 @@ aside {
     }
   }
   &#Stockists {
-    height: 7000px;
+    height: $stockist_height;
     padding-top: 8%;
     h1 {
       top: 300px;
@@ -392,6 +394,7 @@ aside {
           color: black;
           bottom: 0;
           width: 100%;
+          margin-bottom: 40px;
         }
         a {
           text-decoration: none;
@@ -533,7 +536,7 @@ aside {
 }
 
 .AboutText {
-  width: 680px;
+  width: 660px;
   margin: 0 auto;
   line-height: 20px;
   background: white;
@@ -572,23 +575,11 @@ and (min-device-width : 320px)
 and (max-device-width : 480px) {
 
  aside {
+    background-position: center 10%;
     background-attachment: scroll;
-  }
-  #Marfa {
-    background-color: $dark_red;
+    background-repeat: repeat-y;
   }
 
-  #Marfa2 {
-    background-color: $light_yellow;
-  }
-
-  #Marfa3 {
-    background-color: $light_blue;
-  }
-
-  #Marfa4 {
-    background-color: #333;
-  }
 }
 
 .Motto {
@@ -615,7 +606,7 @@ and (max-device-width : 480px) {
     font-size: 56px;
     line-height: 1em;
     padding: 25px 20px 20px;
-    margin-top: 550px;
+    margin-top: 400px;
     margin-bottom: 400px;
   }
   &.Newsletter {
@@ -660,12 +651,12 @@ and (max-device-width : 480px) {
 
 #Marfa3 {
   background-image: url(../img/bigbg3.svg);
-  height: 6600px;
+  height: 7200px;
 }
 
 #Marfa4 {
   background-image: url(../img/bigbg4.svg);
-  height: 3900px;
+  height: 4090px;
 }
 
 .Layer {
@@ -713,7 +704,7 @@ and (max-device-width : 480px) {
 }
 #AboutStart {
   background-color: $about_bg;
-  height: 4780px;
+  height: 4980px;
 }
 
 #Divider1 {
@@ -725,7 +716,7 @@ and (max-device-width : 480px) {
 #Color1 {
   background-size: 60%;
   background-color: $about_bg1;
-  height: 3050px;
+  height: 2650px;
 }
 
 #ShopBg {
@@ -742,7 +733,7 @@ and (max-device-width : 480px) {
 
 #StockistBg {
   background-color: $stockist_bg;
-  height: 5900px;
+  height: $stockist_bg_height;
 }
 
 #Divider3 {

@@ -29,7 +29,6 @@ function scroller() {
     if(!isScrolledIntoView(el)) {
       $("#"+ $(el).attr('data-rel')).prop('checked',true);
       $("#"+ $(el).attr('data-section')).find("img").trigger("loadImg");
-      console.log($("#"+ $(el).attr('data-section')).find("img").length);
     }
   });
 }

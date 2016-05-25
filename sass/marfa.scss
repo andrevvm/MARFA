@@ -35,8 +35,8 @@ $shop_divider: "../img/shop-divider.jpg";
 
 $stockist_bg: #9fbbe2;
 $stockist_nav: white;
-$stockist_height: 7800px;
-$stockist_bg_height: 6900px;
+$stockist_height: 8600px;
+$stockist_bg_height: 7800px;
 
 $contact_bg: #231f20;
 $contact_height: 2800px;
@@ -445,6 +445,11 @@ aside {
   ul {
     margin: 0;
     padding: 0;
+    &:after {
+      content: "";
+      clear: both;
+      display: block;
+    }
 
     li:hover {
       a, span {
@@ -652,7 +657,7 @@ and (max-device-width : 480px) {
 
 #Marfa3 {
   background-image: url(../img/bigbg3.svg);
-  height: 7200px;
+  height: 8000px;
 }
 
 #Marfa4 {

@@ -1,20 +1,57 @@
+@import "compass/css3";
+
 $red: #e16046;
-$dark_red: #DE4627;
+$dark_red: #BA3F15;
 $light_red: #f16e59;
-$light_yellow: #FACA99;
-$light_blue: #2ab6ce;
+$light_yellow: #E3D57D;
+$light_blue: #92A7CA;
+
+$hover_color: #C14B73;
+
+
+
+// Issue variables
+
+
+//----- Intro
+
+$intro_bg: #ebb5ce;
+$intro_nav: #ebb5ce;
+$intro_height: 1500px;
+$intro_divider: "../img/intro.jpg";
+
+$about_bg: #fec775;
+$about_bg1: #9fbbe2;
+$about_bg2: #0c2648;
+
+$about_img: "../img/about-img.jpg";
+$about_divider: "../img/about-divider.jpg";
+
+$about_height: 12700px;
+$about_bg_height: 15450px;
+
+$shop_img: "../img/shop-img.jpg";
+$shop_divider: "../img/shop-divider.jpg";
+
+$stockist_bg: #9fbbe2;
+$stockist_nav: white;
+$stockist_height: 8600px;
+$stockist_bg_height: 7800px;
+
+$contact_bg: #231f20;
+$contact_height: 2800px;
+$contact_divider: "../img/contact-divider.jpg";
+$contact_nav: #1550a4;
+
+$deep_purple: #1c1c42;
+$light_pink: #ffbeda;
+$dark_green: #146747;
 
 $honda: Honda, serif;
 $frutiger: Frutiger, sans-serif;
 
 @import "compass/reset";
 @import "compass/css3/transition";
-
-
-@mixin animation ($duration, $animation) {
-    -webkit-animation: $animation $duration linear;
-    -webkit-animation-iteration-count: infinite;    
-}
 
 @mixin keyframe ($animation_name) {
     @-webkit-keyframes $animation_name {
@@ -34,7 +71,7 @@ $frutiger: Frutiger, sans-serif;
     }
 }
 
-@include keyframe(blink) {
+@include keyframes(blink) {
     0% {
         color: black;
     }
@@ -67,15 +104,21 @@ $frutiger: Frutiger, sans-serif;
 }
 
 body, html {
-  min-width: 400px;
+  min-width: 950px;
   height: 100%;
   font-family: $frutiger;
+  background: $contact_bg;
+}
+
+img {
+  background: none;
 }
 
 a {
   text-decoration: none;
   color: white;
   display: inline-block;
+  outline: none;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -92,7 +135,7 @@ nav {
   text-transform: uppercase;
   text-align: center;
   a {
-    color: black;
+    color: $intro_nav;
   }
   li {
     position: fixed;
@@ -148,7 +191,7 @@ input[name=navSelect] {
 
 #AboutRadio:checked ~ nav {
   li a {
-    color: $light_red;
+    color: $intro_nav;
   }
 
   li#NavAbout a {
@@ -156,19 +199,10 @@ input[name=navSelect] {
   }
 }
 
-#StockistsRadio:checked ~ nav {
-  li a {
-    color: $light_blue;
-  }
-
-  li#NavStockists a {
-    color: white;
-  }
-}
 
 #ShopRadio:checked ~ nav {
   li a {
-    color: $red;
+    color: $about_bg2;
   }
 
   li#NavShop a {
@@ -176,9 +210,19 @@ input[name=navSelect] {
   }
 }
 
+#StockistsRadio:checked ~ nav {
+  li a {
+    color: $stockist_bg;
+  }
+
+  li#NavStockists a {
+    color: $stockist_nav;
+  }
+}
+
 #ContactRadio:checked ~ nav {
   li a {
-    color: black;
+    color: $contact_bg;
   }
 
   li#NavContact a {
@@ -205,22 +249,32 @@ input[name=navSelect] {
 }
 
 aside {
-  min-width: 400px;
+  min-width: 950px;
   height: 4000px;
   background: no-repeat center fixed;
-  background-size: 100% auto;
+  background-size: 100.5% auto;
   position: relative;
   text-align: center;
+
   &#IntroSection {
-    height: 800px;
+    height: $intro_height;
+    padding-top: 1300px;
+    font-family: $honda;
+    text-align: center;
+    font-size: 54px;
+    text-transform: uppercase;
+    @include animation(blink 800ms steps(1, end) infinite);
+    a {
+      color: inherit;
+    }
   }
   &#About {
     margin-top: 0px;
-    padding-top: 50px;
-    height: 9500px;
+    padding-top: 150px;
+    height: $about_height;
 
     h1 {
-      top: 290px;
+      top: 380px;
       font-size: 72px;
     }
 
@@ -228,7 +282,7 @@ aside {
       width: 260px;
       height: auto;
       display: block;
-      margin: 50px auto 250px;
+      margin: 50px auto 320px;
     }
 
     #Skate {
@@ -237,24 +291,63 @@ aside {
 
   }
   &#Shop {
-    padding-top: 12%;
-    height: 2800px;
+    padding-top: 220px;
+    height: 3000px;
     h1 {
-      top: 420px;
+      top: 280px;
       font-size: 72px;
+      color: black;
+      //@include animation(blink 500ms steps(1, end) infinite);
     }
+
     h2 {
       font-size: 56px;
       text-transform: uppercase;
       color: black;
       margin: 50px 0;
       a {
-        @include animation(400ms, blink);
+        @include animation(blink 800ms steps(1,end) infinite);
+      }
+    }
+
+    table {
+      margin: 20px auto;
+      text-align: center;
+      font-family: $honda;
+      font-size: 46px;
+      line-height: 58px;
+      p {
+        font-size: 16px;
+        font-family: $frutiger;
+      }
+      td {
+        text-align: center;
+      }
+      select {
+        border: 1px solid black;
+        font-family: $frutiger;
+        font-size: 20px;
+      }
+    }
+    button {
+      -webkit-appearance: none;
+      font-size: 64px;
+      text-transform: uppercase;
+      color: white;
+      margin: 0px 0;
+      background: none;
+      border: 0;
+      outline: none;
+      span {
+        font-family: $honda;
+        &:hover {
+          @include animation(blink 400ms);
+        }
       }
     }
   }
   &#Stockists {
-    height: 4300px;
+    height: $stockist_height;
     padding-top: 8%;
     h1 {
       top: 300px;
@@ -262,30 +355,47 @@ aside {
     }
   }
   &#Contact {
-    height: 1800px;
+    height: $contact_height;
     #Dancer {
       width: auto;
       height: auto;
-      margin-top: 150px;
+      margin-top: 250px;
       z-index: 0;
     }
     h1 {
-      top: 300px;
+      top: 350px;
       font-size: 72px;
     }
     img {
-      width: 500px;
+      width: 400px;
       height: auto;
     }
+
+    .IssueLink {
+      font-family: $honda;
+      text-transform: uppercase;
+      font-size: 42px;
+    }
+
+    .Social {
+      font-size: 42px;
+      padding: 10px;
+    }
+
     .Text {
       position: relative;
-      top: 400px;
       font-size: 32px;
-      color: #999;
+      color: #FFF;
+      padding-top: 500px;
+      height: 1600px;
       p {
         margin-bottom: 120px;
         &.Website {
           font-size: 0.4em;
+          color: black;
+          bottom: 0;
+          width: 100%;
+          margin-bottom: 40px;
         }
         a {
           text-decoration: none;
@@ -318,6 +428,10 @@ aside {
       vertical-align: middle;
       &.horz {
         width: 700px;
+
+        &.sm {
+          width: 500px;
+        }
       }
     }
   }
@@ -326,16 +440,27 @@ aside {
 #StockistsList {
   width: 700px;
   margin: 0 auto;
-  color: black;
+  color: white;
 
   ul {
     margin: 0;
     padding: 0;
+    &:after {
+      content: "";
+      clear: both;
+      display: block;
+    }
+
+    li:hover {
+      a, span {
+        color: black;
+      }
+    }
+
   }
   label {
     font-family: $honda;
     font-size: 56px;
-    cursor: pointer;
     text-transform: uppercase;
     line-height: 1.6em;
     letter-spacing: 2px;
@@ -349,8 +474,11 @@ aside {
   a, span {
     padding: 10px;
     display: inline-block;
-    color: black;
+    color: white;
     font-weight: bold;
+    &:hover {
+      color: black;
+    }
   }
 
   a:hover {
@@ -361,12 +489,12 @@ aside {
     clear: both;
     text-transform: uppercase;
     font-size: 20px;
-    margin: 0 0 10px;
+    margin: 0 20px 10px;
     letter-spacing: 2px;
-    padding: 40px 0 0px;
+    padding: 40px 10px 0px;
     line-height: 1em;
     text-align: left;
-    color: white;
+    color: black;
   }
 
   .info {
@@ -413,96 +541,78 @@ aside {
   }
 }
 
-.Chateau {
-  width: 600px;
+.AboutText {
+  width: 660px;
   margin: 0 auto;
   line-height: 20px;
+  background: white;
   p {
     margin: 15px 0;
+    line-height: 32px;
   }
-  .question {
+  strong {
     font-family: $honda;
-    font-size: 20px;
-    color: #00a2b4;
-    letter-spacing: 2px;
+    font-size: 24px;
+    letter-spacing: 0;
     text-align: center;
     font-style: normal;
+    font-weight: normal;
     line-height: 1.1em;
-  }
-  .answer {
-    font-family: $frutiger;
-    font-size: 15px;
-    color: #000000;
-    letter-spacing: 1px;
-    text-align: left;
-    top: 0px;
-    left: 0px;
-    background: #F2F7EC url(../img/chateau.png) top center no-repeat;
-    border-image-repeat: none;
-    padding-top: 1px;
-
+    text-transform: uppercase;
   }
   .text {
     font-family: $frutiger;
-    font-size: 15px;
+    font-size: 18px;
     color: #000000;
-    letter-spacing: 1px;
     text-align: justify;
     position: relative;
-    margin-left: 70px;
-    margin-top: 170px;
-    margin-right: 70px;
-    padding-bottom: 60px;
+    padding: 60px 70px;
+    line-height: 32px;
+  }
+
+  img {
+    display: block;
+    margin: 30px auto;
   }
 }
 
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
- body {
-  background-color: white;
- }
+
  aside {
+    background-position: center 10%;
     background-attachment: scroll;
-  }
-  #Marfa {
-    background-color: $dark_red;
+    background-repeat: repeat-y;
   }
 
-  #Marfa2 {
-    background-color: $light_yellow;
-  }
-
-  #Marfa3 {
-    background-color: $light_blue;
-  }
-
-  #Marfa4 {
-    background-color: #333;
-  }
 }
 
-#IntroSection {
-  padding-top: 1200px;
+.Motto {
+  width: 400px;
+  height: auto;
 }
 
 .TextBlock {
-  width: 280px;
+  width: 300px;
   margin: 0 auto;
-  padding: 50px 50px 50px;
+  padding: 10px;
   background: white;
   color: black;
   font-family: $honda;
   text-align: center;
   font-size: 64px;
   line-height: 1em;
-  &#Insane {
+
+  
+
+  &#DividerText {
     text-transform: uppercase;
-    width: 500px;
+    width: 300px;
     font-size: 56px;
     line-height: 1em;
     padding: 25px 20px 20px;
-    margin-top: 430px;
+    margin-top: 400px;
     margin-bottom: 400px;
   }
   &.Newsletter {
@@ -514,9 +624,12 @@ and (max-device-width : 480px) {
     margin-top: 50px;
   }
   a {
-    color: $red;
+    color: black;
     &:hover {
-      text-decoration: underline;
+      color: $hover_color;
+      small {
+        color: $hover_color !important;
+      }
     }
   }
   &#Marfart {
@@ -526,34 +639,37 @@ and (max-device-width : 480px) {
       color: black;
     }
     img {
-      margin: auto;
+      min-height: 0;
+      margin: 20px auto 0;
     }
   }
 }
 
 #Marfa {
-  background-image: url(../img/bigbg@2x.png);
-  height: 11500px;
+  background-image: url(../img/bigbg1.svg);
+  height: $about_bg_height;
 }
 
 #Marfa2 {
-  background-image: url(../img/bigbg2@2x.png);
-  height: 2800px;
+  background-image: url(../img/bigbg2.svg);
+  height: 3000px;
 }
 
 #Marfa3 {
-  background-image: url(../img/bigbg3@2x.png);
+  background-image: url(../img/bigbg3.svg);
+  height: 8000px;
 }
 
 #Marfa4 {
-  background-image: url(../img/bigbg4@2x.png);
-  height: 2450px;
+  background-image: url(../img/bigbg4.svg);
+  height: 4090px;
 }
 
 .Layer {
   position: absolute;
   width: 100%;
   height: 100%;
+  min-width: 950px;
 }
 
 #Layer1 {
@@ -566,64 +682,76 @@ and (max-device-width : 480px) {
 
 #Layer3 {
   z-index: 3;
-  
 }
 
 .BgImage {
   background-size: 55% auto;
   background-position: center;
   background-attachment: fixed;
-  min-width: 400px;
+  min-width: 950px;
   margin: 0 auto;
   position: relative;
-  top: 100%;
   height: 1100px;
 }
 
+#Start {
+  height: 100%;
+  top: 0;
+  background: $intro_bg;
+}
+
 #Intro {
-  background-image: url(../img/kit_run.gif);
+  background-image: url($intro_divider);
   background-color: white;
-  background-size: 20% auto;
-  background-position: center;
+  background-size: 62% auto;
+  background-position: center 50%;
   background-attachment: fixed;
-  height: 1000px;
+  height: $intro_height;
 }
-#Red {
-  background-color: $light_red;
-  height: 3850px;
-}
-#Bra {
-  background-image: url(../img/marfa7.jpg);
-  background-size: 60%;
-  background-color: $light_red;
-  height: 700px;
-}
-#Caught {
-  background-size: 60%;
-  background-color: $light_red;
-  height: 6900px;
-}
-#Linds {
-  background-image: url(../img/linds.jpg);
-  background-size: 72%;
-  height: 1140px;
-}
-#Next {
-  background-position: bottom;
-  background-attachment: scroll;
-  background-color: $red;
-  background-size: 100% auto;
+#AboutStart {
+  background-color: $about_bg;
+  height: 4980px;
 }
 
-#White {
-  background-color: $light_blue;
-  height: 3000px;
+#Divider1 {
+  background-image: url($about_divider);
+  background-size: 75%;
+  background-color: $light_red;
+  height: 900px;
+}
+#Color1 {
+  background-size: 60%;
+  background-color: $about_bg1;
+  height: 2650px;
 }
 
-#Madchen {
-  background-image: url(../img/rock.jpg);
+#ShopBg {
+  background-color: $about_bg2;
+  height: 6500px;
+}
+
+#Divider2 {
+  background-image: url($shop_divider);
+  background-position: center;
   background-size: 80%;
-  height: 1200px;
+  height: 1100px;
+}
+
+#StockistBg {
+  background-color: $stockist_bg;
+  height: $stockist_bg_height;
+}
+
+#Divider3 {
+  background-image: url($contact_divider);
+  background-position: center;
+  background-size: 80%;
+  height: 1100px;
+}
+
+#ContactBg {
+  background: $contact_bg;
+  height: $contact_height;
 }
 
 
@@ -642,13 +770,14 @@ and (max-device-width : 480px) {
 
 #ShopGif {
   display: block;
-  width: 200px;
+  width: 500px;
   margin: 40px auto 300px;
 }
 
 #Covers {
   background: white;
   border: 50px solid white;
+  width: 800px;
 }
 
 #StockistsGif {

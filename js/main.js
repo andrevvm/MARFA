@@ -1,11 +1,22 @@
 $(function() {
   $('nav label').click(function() {
     var href = $(this).attr('data-href');
+    $("img").trigger("loadImg");
     window.location = href;
   });
   var sections = new Array();
   
   setInterval(scroller,50);
+
+  $("aside img").lazyload({
+    threshold: window.innerHeight
+  });
+
+  $("aside img").lazyload({
+      event: "loadImg",
+      effect: "fadeIn"
+  });
+
 });
 
 function scroller() {
@@ -17,6 +28,7 @@ function scroller() {
     var el = this;
     if(!isScrolledIntoView(el)) {
       $("#"+ $(el).attr('data-rel')).prop('checked',true);
+      $("#"+ $(el).attr('data-section')).find("img").trigger("loadImg");
     }
   });
 }
